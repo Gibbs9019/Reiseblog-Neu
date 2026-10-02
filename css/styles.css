@@ -1,0 +1,781 @@
+/* ================ */
+/* ---- Header ---- */
+/* ================ */
+
+.site-header {
+  position: relative;
+  overflow-x: clip;
+  overflow-y: visible;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 1rem;
+
+  background-color: var(--color-chrome);
+  color: var(--color-on-chrome);
+
+  /* height: ; ggf für sticky header notwendig? */
+  padding: var(--space-s);
+}
+
+.site-header a {
+  cursor: pointer;
+}
+
+/* Größe des Logos steuerst du hier – das SVG selbst hat keine feste Größe */
+
+.site-logo {
+  width: var(--space-2xl);
+  height: auto;
+  display: block;
+  flex: none;
+  margin-right: 1em;
+}
+
+.site-title {
+  font-size: var(--fs-h2);
+  font-weight: 700;
+  letter-spacing: var(--ls-h3);
+  color: var(--color-on-chrome);
+}
+
+/* ---- Farbzuweisung im SVG ---- */
+.site-logo .ink {
+  fill: var(--logo-ink);
+}
+.site-logo .stroke {
+  stroke: var(--logo-ink);
+}
+.site-logo .badge {
+  fill: var(--logo-badge);
+}
+.site-logo .ring {
+  stroke: var(--logo-ring);
+}
+.site-logo .ocean {
+  fill: var(--logo-ocean);
+}
+.site-logo .land {
+  fill: var(--logo-land);
+}
+.site-logo .grid {
+  stroke: var(--logo-land);
+}
+.site-logo .bunny {
+  fill: var(--logo-bunny);
+}
+.site-logo .bunny-s {
+  stroke: var(--logo-bunny);
+}
+.site-logo .bear {
+  fill: var(--logo-bear);
+}
+.site-logo .bear-s {
+  stroke: var(--logo-bear);
+}
+.site-logo .bear-lt {
+  fill: var(--logo-bear-2);
+}
+.site-logo .accent {
+  fill: var(--logo-accent);
+}
+
+/* Beispiel: eigene Farbwelt für einen Regions-Post.
+     Nur die Rollen überschreiben – das SVG bleibt unangetastet. */
+/* .region-outback {
+    --logo-ocean: #a8552f;
+    --logo-land:  #f0e2d2; */
+
+/* ================ */
+/* ----Navigation-- */
+/* ================ */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: var(--space-l);
+  flex-direction: column;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-body);
+  font-weight: 600;
+  font-size: var(--fs-h2);
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: var(--color-accent);
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: auto;
+
+  display: block;
+  z-index: 2;
+}
+
+.icon-mobile-nav {
+  width: var(--space-l);
+  height: auto;
+  stroke: var(--color-on-chrome);
+  fill: var(--color-on-chrome);
+}
+
+.icon-mobile-nav[name="close"] {
+  display: none;
+}
+
+.main-nav {
+  background-color: var(--color-surface);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  transform: translateX(100%);
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in;
+
+  /* Hide navigation */
+  /* Allows NO transitions at all */
+  /* display: none; */
+
+  /* 1) Hide it visually */
+  opacity: 0;
+
+  /* 2) Make it unaccessible to mouse and keyboard */
+  pointer-events: none;
+
+  /* 3) Hide it from screen readers */
+  visibility: hidden;
+}
+
+.nav-open .main-nav {
+  opacity: 0.9;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.nav-open .icon-mobile-nav {
+  stroke: var(--color-accent);
+  fill: var(--color-accent);
+}
+
+.nav-open .icon-mobile-nav[name="close"] {
+  display: block;
+}
+
+.nav-open .icon-mobile-nav[name="menu"] {
+  display: none;
+}
+
+/* ================ */
+/* ----- Hero ----- */
+/* ================ */
+
+.hero {
+  width: 100%;
+  max-width: var(--content-max);
+  margin-inline: auto;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+
+  position: relative;
+}
+
+.hero-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text-box,
+.author-imgs {
+  text-align: center;
+  padding: var(--space-m) var(--space-xs);
+}
+
+.hero-img-container {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+@media (min-width: 662px) {
+  .hero-img-container {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+.hero-text-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.hero-img-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(206, 223, 217, 0.85) 0%,
+    rgba(206, 223, 217, 0) 55%
+  );
+  pointer-events: none;
+}
+
+.hero-text {
+  margin-inline: auto;
+  font-size: var(--fs-lead);
+  font-weight: 600;
+}
+
+.btn--hero {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.authors-container {
+  display: flex;
+  align-items: center;
+  margin-inline: auto;
+  margin-top: var(--space-m);
+}
+
+.author-imgs img {
+  width: var(--space-xl);
+  height: auto;
+  border-radius: 50%;
+  margin-right: -1em;
+  border: 2px solid var(--color-surface);
+}
+
+.author-imgs img:last-child {
+  margin-right: 0;
+}
+
+.authors {
+  font-weight: 500;
+  font-size: var(--fs-lead);
+  color: var(--color-body);
+}
+
+/* ================ */
+/* ----- Map ------ */
+/* ================ */
+
+.subheading-mobile {
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: var(--space-m);
+  font-weight: 600;
+  font-size: var(--fs-h2);
+}
+
+.map {
+  max-width: 80%;
+  justify-self: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.weather-icon-big {
+  height: var(--space-2xl);
+  width: auto;
+  display: block;
+  justify-self: center;
+  stroke: var(--color-accent);
+  fill: var(--color-accent);
+}
+
+.weather-widget {
+  display: block;
+  justify-self: center;
+}
+
+/* .map-current {
+  aspect-ratio: 1;
+  background-image: url("../img/maps/singapur-karte-1800px.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5em;
+} */
+
+/* ================ */
+/* ----- Posts ---- */
+/* ================ */
+
+.section-posts {
+  background-color: var(--color-surface-tint);
+}
+
+.card:link,
+.card:visited {
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+  aspect-ratio: 3/2;
+  border-radius: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.4s ease;
+  background-color: var(--color-surface);
+}
+
+.card:hover,
+.card:active {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-container {
+  height: 100%;
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card {
+  position: relative;
+}
+
+.description-container {
+  padding: var(--space-l) 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(206, 223, 217, 0.9) 0%,
+    rgba(206, 223, 217, 0) 70%
+  );
+  pointer-events: none;
+}
+
+.card-description {
+  color: var(--color-body);
+  text-align: center;
+  margin-inline: auto;
+  font-size: var(--fs-h3);
+  font-weight: 600;
+}
+
+/* ================ */
+/* ----- Footer --- */
+/* ================ */
+
+.grid--footer {
+  grid-template-columns: 1fr 1fr;
+  column-gap: var(--space-s);
+  row-gap: var(--space-l);
+}
+
+.copy {
+  font-size: var(--fs-body);
+  color: var(--color-muted);
+  text-align: center;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: var(--space-m);
+  justify-content: space-around;
+}
+
+.footer-copy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.footer-link {
+  display: flex;
+  gap: var(--space-xs);
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-link span {
+  color: var(--color-muted);
+}
+
+.footer-link:link svg,
+.footer-link:visited svg {
+  height: var(--space-l);
+  width: var(--space-l);
+  stroke: var(--color-accent);
+  fill: var(--color-accent);
+  transition: all 0.3s;
+}
+
+.footer-link:hover svg,
+.footer-link:active svg {
+  stroke: var(--color-heading);
+  fill: var(--color-heading);
+  transform: scale(1.2);
+}
+
+.footer-links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  transition: all 0.3s;
+  color: var(--color-muted);
+  font-size: var(--fs-body);
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: var(--color-heading);
+}
+
+/* ================ */
+/* --- Blogpost --- */
+/* ================ */
+
+/* Section  Blog Hero */
+
+.post-hero {
+  width: 100%;
+  max-width: var(--content-max);
+  margin-inline: auto;
+  text-align: center;
+  position: relative;
+}
+
+.post-hero-img-container {
+  aspect-ratio: 4 / 3;
+}
+
+.post-hero-text-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  padding-block: var(--space-m);
+}
+
+.blog-heading {
+  color: var(--color-heading);
+}
+
+.blog-sub {
+  color: var(--color-heading);
+  margin-inline: auto;
+  font-weight: 600;
+}
+
+.post-hero-img-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(206, 223, 217, 0.95) 0%,
+    rgba(206, 223, 217, 0) 60%
+  );
+  pointer-events: none;
+}
+
+/* Section Weather */
+
+.section-weather {
+  padding-bottom: var(--space-s);
+}
+
+.weather {
+  display: flex;
+  gap: var(--space-m);
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-icon {
+  height: var(--space-2xl);
+  width: var(--space-2xl);
+  stroke: var(--color-accent);
+  fill: var(--color-accent);
+}
+
+.temp {
+  font-size: var(--fs-h2);
+  font-weight: 500;
+  color: var(--color-accent);
+}
+
+/*  */
+/*  */
+/* Section Paragraphs only no pictures*/
+/*  */
+/*  */
+
+.heading-paragraph {
+  color: var(--color-heading);
+}
+
+.text {
+  color: var(--color-body);
+}
+
+/* Section Image Only */
+/*  */
+/*  */
+
+.img-only-box {
+  aspect-ratio: 4/3;
+  max-width: 100%;
+}
+
+.img-only-box img {
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 0.5em;
+}
+
+/*  */
+/*  */
+/* Section 2 Hochkant Bild und Text */
+/*  */
+/*  */
+
+.text-img {
+  background-color: var(--color-surface-tint);
+}
+
+.card-container {
+  background-color: var(--color-surface);
+  padding: var(--space-m);
+  border-radius: 0.5em;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: var(--space-m);
+  flex-direction: column;
+
+  /*hier mit media querrie oben und unten tauschen */
+}
+
+.img-box {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+.img-box-h {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.img-box img,
+.img-box-h img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5em;
+}
+
+/*  */
+/*  */
+/* Section 3 Landscape Bild und Text */
+/*  */
+/*  */
+
+.text-landscape {
+  background-color: var(--color-surface-tint);
+}
+
+/* nur abhängig von Bilddimensionen! */
+
+.descr-weiter {
+  /* text-align: center; */
+  margin: 0 auto;
+}
+
+/* =================== */
+/* -----Gallery ------ */
+/* =================== */
+
+/* click me */
+
+.clickme-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-s);
+  margin-bottom: var(--space-s);
+}
+
+.arrowdown {
+  width: var(--space-xl);
+  height: var(--space-xl);
+  stroke: var(--color-accent);
+  fill: var(--color-accent);
+}
+
+.clickme {
+  font-size: var(--fs-h3);
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* --- Das Grid --- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(16rem, 100%), 1fr));
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* quadratische Kacheln; entfernen für Originalverhältnis */
+  object-fit: cover;
+  cursor: pointer;
+  display: block;
+  background: var(--color-chrome);
+  /* Platzhalterfarbe, bis das Bild geladen ist */
+  transition:
+    transform 0.3s,
+    opacity 0.2s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* --- Die Lightbox --- */
+/* Immer als flex angelegt, aber unsichtbar. So lässt sich opacity animieren
+     (display: none kann man nicht per transition weich ein-/ausblenden). */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: var(--color-chrome);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s;
+}
+
+.lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox img {
+  max-width: 90dvw;
+  max-height: 85dvh;
+  border-radius: none;
+  object-fit: contain;
+  touch-action: pan-y; /* vertikales Scrollen erlauben, horizontal wischen wir selbst */
+  transition:
+    filter 0.2s ease,
+    opacity 0.15s ease;
+}
+
+/* Solange das hochauflösende Bild lädt, zeigen wir die kleine Vorschau
+   leicht geweichzeichnet an, statt eine leere Fläche */
+.lightbox img.is-loading {
+  filter: blur(12px);
+  transform: scale(1.02); /* verhindert scharfe Ränder durch den Blur */
+}
+
+.lb-btn {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--color-surface);
+  border: none;
+  cursor: pointer;
+  width: 5.2rem;
+  height: 5.2rem;
+  border-radius: 50%;
+  font-size: 2.6rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+.lb-btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+.lb-btn:focus-visible {
+  outline: 2px solid var(--color-surface);
+  outline-offset: 2px;
+}
+
+.lb-prev {
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.lb-next {
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.lb-close {
+  top: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  font-size: 22px;
+}
+
+.lb-counter {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}

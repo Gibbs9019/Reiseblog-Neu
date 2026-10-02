@@ -1,0 +1,1167 @@
+﻿<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link für font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Perth</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html">
+        <svg
+          class="site-logo"
+          viewBox="0 0 400 400"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          aria-label="Reiseblog – Häschen, Bär und Globus"
+        >
+          <defs>
+            <clipPath id="logoGlobeClip">
+              <circle cx="200" cy="255" r="112" />
+            </clipPath>
+          </defs>
+
+          <!-- Badge -->
+          <circle cx="200" cy="200" r="188" class="badge" />
+          <circle
+            cx="200"
+            cy="200"
+            r="188"
+            fill="none"
+            class="stroke"
+            stroke-width="7"
+          />
+          <circle
+            cx="200"
+            cy="200"
+            r="176"
+            fill="none"
+            class="ring"
+            stroke-width="2"
+            opacity="0.45"
+          />
+
+          <!-- Arme -->
+          <path
+            d="M150 176 Q120 196 150 214"
+            fill="none"
+            class="stroke"
+            stroke-width="20"
+            stroke-linecap="round"
+          />
+          <path
+            d="M150 176 Q120 196 150 214"
+            fill="none"
+            class="bunny-s"
+            stroke-width="13"
+            stroke-linecap="round"
+          />
+          <path
+            d="M252 178 Q282 198 252 216"
+            fill="none"
+            class="stroke"
+            stroke-width="22"
+            stroke-linecap="round"
+          />
+          <path
+            d="M252 178 Q282 198 252 216"
+            fill="none"
+            class="bear-s"
+            stroke-width="15"
+            stroke-linecap="round"
+          />
+
+          <!-- Globus -->
+          <circle cx="200" cy="255" r="112" class="ocean" />
+          <g clip-path="url(#logoGlobeClip)">
+            <path
+              d="M118 215 q34 -20 64 -2 q24 16 4 42 q-22 24 -54 12 q-30 -14 -14 -52 z"
+              class="land"
+            />
+            <path
+              d="M214 300 q42 -14 68 12 q18 22 -12 42 q-42 26 -76 -4 q-20 -30 20 -50 z"
+              class="land"
+            />
+            <path
+              d="M252 205 q24 -4 30 16 q6 22 -20 26 q-22 2 -26 -18 q-2 -20 16 -24 z"
+              class="land"
+            />
+            <ellipse
+              cx="200"
+              cy="255"
+              rx="44"
+              ry="112"
+              fill="none"
+              class="grid"
+              stroke-width="2.5"
+              opacity="0.55"
+            />
+            <line
+              x1="88"
+              y1="255"
+              x2="312"
+              y2="255"
+              class="grid"
+              stroke-width="2.5"
+              opacity="0.55"
+            />
+            <path
+              d="M94 210 q106 30 212 0"
+              fill="none"
+              class="grid"
+              stroke-width="2"
+              opacity="0.4"
+            />
+            <path
+              d="M94 300 q106 30 212 0"
+              fill="none"
+              class="grid"
+              stroke-width="2"
+              opacity="0.4"
+            />
+          </g>
+          <circle
+            cx="200"
+            cy="255"
+            r="112"
+            fill="none"
+            class="stroke"
+            stroke-width="5.5"
+          />
+
+          <!-- Pfoten -->
+          <circle
+            cx="150"
+            cy="214"
+            r="14"
+            class="bunny stroke"
+            stroke-width="4.5"
+          />
+          <circle
+            cx="252"
+            cy="216"
+            r="15"
+            class="bear stroke"
+            stroke-width="4.5"
+          />
+
+          <!-- Häschen -->
+          <g transform="rotate(6 168 140)">
+            <ellipse
+              cx="150"
+              cy="66"
+              rx="14"
+              ry="50"
+              transform="rotate(-12 150 66)"
+              class="bunny stroke"
+              stroke-width="5"
+            />
+            <ellipse
+              cx="186"
+              cy="60"
+              rx="14"
+              ry="52"
+              transform="rotate(7 186 60)"
+              class="bunny stroke"
+              stroke-width="5"
+            />
+            <ellipse
+              cx="150"
+              cy="68"
+              rx="6.5"
+              ry="36"
+              transform="rotate(-12 150 68)"
+              class="accent"
+              opacity="0.55"
+            />
+            <ellipse
+              cx="186"
+              cy="62"
+              rx="6.5"
+              ry="38"
+              transform="rotate(7 186 62)"
+              class="accent"
+              opacity="0.55"
+            />
+            <circle
+              cx="168"
+              cy="140"
+              r="48"
+              class="bunny stroke"
+              stroke-width="5"
+            />
+            <circle cx="145" cy="152" r="8.5" class="accent" opacity="0.45" />
+            <circle cx="191" cy="152" r="8.5" class="accent" opacity="0.45" />
+            <circle cx="153" cy="136" r="6" class="ink" />
+            <circle cx="183" cy="136" r="6" class="ink" />
+            <path d="M168 148 l7 6 h-14 z" class="accent" />
+            <path
+              d="M168 154 v6 M168 160 q-6 5 -12 2 M168 160 q6 5 12 2"
+              fill="none"
+              class="stroke"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+          </g>
+
+          <!-- Bär -->
+          <g transform="rotate(-6 234 144)">
+            <circle
+              cx="208"
+              cy="106"
+              r="20"
+              class="bear stroke"
+              stroke-width="5"
+            />
+            <circle
+              cx="262"
+              cy="106"
+              r="20"
+              class="bear stroke"
+              stroke-width="5"
+            />
+            <circle cx="208" cy="106" r="9.5" class="bear-lt" />
+            <circle cx="262" cy="106" r="9.5" class="bear-lt" />
+            <circle
+              cx="235"
+              cy="146"
+              r="52"
+              class="bear stroke"
+              stroke-width="5"
+            />
+            <ellipse cx="235" cy="164" rx="29" ry="23" class="bear-lt" />
+            <circle cx="210" cy="156" r="8.5" class="ink" opacity="0.18" />
+            <circle cx="260" cy="156" r="8.5" class="ink" opacity="0.18" />
+            <circle cx="220" cy="140" r="6" class="ink" />
+            <circle cx="250" cy="140" r="6" class="ink" />
+            <ellipse cx="235" cy="156" rx="8.5" ry="6.5" class="ink" />
+            <path
+              d="M235 162 v6 M235 168 q-7 6 -13 1 M235 168 q7 6 13 1"
+              fill="none"
+              class="stroke"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+          </g>
+        </svg>
+      </a>
+      <span class="site-title">Reiseblog</span>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="index.html">Start</a></li>
+          <li>
+            <a class="main-nav-link" href="coles.html"
+              >Aktueller Post</a
+            >
+          </li>
+          <li><a class="main-nav-link" href="#">...</a></li>
+          <li><a class="main-nav-link" href="#">...</a></li>
+          <li><a class="main-nav-link" href="#">Über uns</a></li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
+          fill="#000000"
+          viewBox="0 0 256 256"
+          class="icon-mobile-nav"
+          name="menu"
+        >
+          <path
+            d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+          ></path>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
+          fill="#000000"
+          viewBox="0 0 256 256"
+          class="icon-mobile-nav"
+          name="close"
+        >
+          <path
+            d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+          ></path>
+        </svg>
+      </button>
+    </header>
+    <main>
+      <section class="section-post-hero">
+        <div class="post-hero">
+          <div class="post-hero-img-container">
+            <!--  -->
+            <img
+              src="/cdn-cgi/image/width=2400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-15.jpg"
+              srcset="
+                /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-15.jpg   400w,
+                /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-15.jpg   800w,
+                /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-15.jpg 1200w,
+                /cdn-cgi/image/width=1800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-15.jpg 1800w
+              "
+              sizes="100vw"
+              class="hero-img"
+              loading="eager"
+              decoding="async"
+              width="4000"
+              height="3000"
+              alt="Bucht auf Rottnest Island"
+              onerror="
+                this.onerror = null;
+                this.srcset = '';
+                this.src = '/img/rottnest/rottnest-15.jpg';
+              "
+            />
+            <!--  -->
+          </div>
+          <div class="post-hero-text-box flow">
+            <h1 class="blog-heading">Rottnest Island</h1>
+            <p class="blog-sub">Inselparadies vor Perth</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Weather -->
+
+      <section class="section section-weather">
+        <div class="container weather">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            fill="#000000"
+            viewBox="0 0 256 256"
+            class="weather-icon"
+          >
+            <path
+              d="M164,72a76.2,76.2,0,0,0-20.26,2.73,55.63,55.63,0,0,0-9.41-11.54l9.51-13.57a8,8,0,1,0-13.11-9.18L121.22,54A55.9,55.9,0,0,0,96,48c-.58,0-1.16,0-1.74,0L91.37,31.71a8,8,0,1,0-15.75,2.77L78.5,50.82A56.1,56.1,0,0,0,55.23,65.67L41.61,56.14a8,8,0,1,0-9.17,13.11L46,78.77A55.55,55.55,0,0,0,40,104c0,.57,0,1.15,0,1.72L23.71,108.6a8,8,0,0,0,1.38,15.88,8.24,8.24,0,0,0,1.39-.12l16.32-2.88a55.74,55.74,0,0,0,5.86,12.42A52,52,0,0,0,84,224h80a76,76,0,0,0,0-152ZM56,104a40,40,0,0,1,72.54-23.24,76.26,76.26,0,0,0-35.62,40,52.14,52.14,0,0,0-31,4.17A40,40,0,0,1,56,104ZM164,208H84a36,36,0,1,1,4.78-71.69c-.37,2.37-.63,4.79-.77,7.23a8,8,0,0,0,16,.92,58.91,58.91,0,0,1,1.88-11.81c0-.16.09-.32.12-.48A60.06,60.06,0,1,1,164,208Z"
+            ></path>
+          </svg>
+          <span class="temp">20°C</span>
+        </div>
+      </section>
+
+      <section class="section text-only">
+        <div class="container grid grid--max2-cols">
+          <div class="paragraph flow">
+            <!-- <h2 class="heading-paragraph">Ready for Takeoff</h2> -->
+            <p class="text">
+              Von Freemantle ging es eine gute halbe Stunde über etwas rauhe
+              See, dafür mit Waalsichtung, nach Rottnest Island. Eine Insel ohne
+              Autoverkehr, sodass wir die Insel mit dem Fahrrad erkunden
+              konnten.
+            </p>
+          </div>
+          <p class="text">
+            Leider verpassten wir erneut die Aufzeichnung der Stravaaktivität:
+            "Tretmühle am Morgen &dash; 40km, gefühlte 800 Höhenmeter,
+            Gegenwind".
+          </p>
+        </div>
+      </section>
+
+      <!--  Section 2 Hochkant Bilder  -->
+      <section class="section text-img">
+        <div class="container grid grid--max2-cols">
+          <div class="card-container">
+            <div class="img-box">
+              <img
+                src="/cdn-cgi/image/width=2400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-5.jpg"
+                srcset="
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-5.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-5.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-5.jpg 1200w,
+                  /cdn-cgi/image/width=1800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-5.jpg 1800w
+                "
+                sizes="(min-width: 1200px) 500px,(min-width: 661px) calc(50vw - 95px), calc(100vw - 90px)"
+                loading="lazy"
+                decoding="async"
+                width="3000"
+                height="4000"
+                alt="Quokka"
+                onerror="
+                  this.onerror = null;
+                  this.srcset = '';
+                  this.src = '/img/rottnest/rottnest-5.jpg';
+                "
+              />
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="img-box">
+              <img
+                src="/cdn-cgi/image/width=2400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-6.jpg"
+                srcset="
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-6.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-6.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-6.jpg 1200w,
+                  /cdn-cgi/image/width=1800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-6.jpg 1800w
+                "
+                sizes="(min-width: 1200px) 500px, (min-width: 661px) calc(50vw - 95px), calc(100vw - 90px)"
+                loading="lazy"
+                decoding="async"
+                width="3000"
+                height="4000"
+                alt="Quokka"
+                onerror="
+                  this.onerror = null;
+                  this.srcset = '';
+                  this.src = '/img/rottnest/rottnest-6.jpg';
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 1 nur Text -->
+
+      <section class="section text-only">
+        <div class="container grid grid--max2-cols">
+          <div class="paragraph flow">
+            <p class="text">
+              Begrüßt wurden wir von Quokkas, eine Beuteltierart aus der Familie
+              der Kängurus, der einzige Vertreter der Gattung Setonix. Sie leben
+              in einem kleinen Bereich Westaustraliens und auf Rottnest Island
+              und wurden bei der Inselentdeckung fälschlicherweise für Ratten
+              gehalten, was den irreführenden Namen der Insel &dash; Rattennest
+              &dash; erklärt.
+            </p>
+          </div>
+          <p class="text">
+            Auch der Rosakakadu, eine nicht zu überhörende Papageienart ließ
+            nicht lange auf sich warten. Die Vögel sind in ganz Australien
+            verbreitet und gelten teilweise als Schädlinge (Lieblingsfressen:
+            Getreide). Auch Möwen, die übrigens hier anders klingen als bei uns,
+            waren reichlich vertreten.
+          </p>
+        </div>
+      </section>
+
+      <!--  Section 2 Hochkant Bilder  -->
+      <section class="section text-img">
+        <div class="container grid grid--max2-cols">
+          <div class="card-container">
+            <div class="img-box">
+              <img
+                src="/cdn-cgi/image/width=2400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-16.jpg"
+                srcset="
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-16.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-16.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-16.jpg 1200w,
+                  /cdn-cgi/image/width=1800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-16.jpg 1800w
+                "
+                sizes="(min-width: 1200px) 500px, (min-width: 661px) calc(50vw - 95px), calc(100vw - 90px)"
+                loading="lazy"
+                decoding="async"
+                width="3000"
+                height="4000"
+                alt="Rosa Kakadu"
+                onerror="
+                  this.onerror = null;
+                  this.srcset = '';
+                  this.src = '/img/rottnest/rottnest-16.jpg';
+                "
+              />
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="img-box">
+              <img
+                src="/cdn-cgi/image/width=2400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-4.jpg"
+                srcset="
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-4.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-4.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-4.jpg 1200w,
+                  /cdn-cgi/image/width=1800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-4.jpg 1800w
+                "
+                sizes="(min-width: 1200px) 500px,(min-width: 661px) calc(50vw - 95px), calc(100vw - 90px)"
+                loading="lazy"
+                decoding="async"
+                width="3000"
+                height="4000"
+                alt="Möwe mit meckerndem Gesichtsausdruck"
+                onerror="
+                  this.onerror = null;
+                  this.srcset = '';
+                  this.src = '/img/rottnest/rottnest-4.jpg';
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Image Only -->
+
+      <section class="section img-only">
+        <div class="container">
+          <div class="img-only-box">
+            <img
+              src="/cdn-cgi/image/width=2400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-8.jpg"
+              srcset="
+                /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-8.jpg   400w,
+                /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-8.jpg   800w,
+                /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-8.jpg 1200w,
+                /cdn-cgi/image/width=1800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-8.jpg 1800w
+              "
+              sizes="(min-width: 1200px) 1200px, calc(100vw-40px)"
+              loading="lazy"
+              decoding="async"
+              width="4000"
+              height="3000"
+              alt="Rosa Kakadu"
+              onerror="
+                this.onerror = null;
+                this.srcset = '';
+                this.src = '/img/rottnest/rottnest-8.jpg';
+              "
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 Hochkant Bild und Text -->
+      <section class="section text-img">
+        <div class="container grid grid--max2-cols">
+          <div class="card-container">
+            <div class="img-box">
+              <img
+                src="/cdn-cgi/image/width=2400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-21.jpg"
+                srcset="
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-21.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-21.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-21.jpg 1200w,
+                  /cdn-cgi/image/width=1800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-21.jpg 1800w
+                "
+                sizes="(min-width: 1200px) 500px,(min-width: 661px) calc(50vw - 95px), calc(100vw - 90px)"
+                loading="lazy"
+                decoding="async"
+                width="3000"
+                height="4000"
+                alt="Kaffee Truck auf Rottnest Island"
+                onerror="
+                  this.onerror = null;
+                  this.srcset = '';
+                  this.src = '/img/rottnest/rottnest-21.jpg';
+                "
+              />
+            </div>
+            <div class="descr-box">
+              <h2 class="heading-paragraph">Aussie Roasters</h2>
+              <p class="text">
+                Australien überzeugt mit köstlichen Cafe-Variationen selbst im
+                Nationalpark oder am Bahnhof.
+              </p>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="img-box">
+              <img
+                src="/cdn-cgi/image/width=2400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-22.jpg"
+                srcset="
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-22.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-22.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-22.jpg 1200w,
+                  /cdn-cgi/image/width=1800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-22.jpg 1800w
+                "
+                sizes="(min-width: 1200px) 500px, (min-width: 661px) calc(50vw - 95px), calc(100vw - 90px)"
+                loading="lazy"
+                decoding="async"
+                width="3000"
+                height="4000"
+                alt="Kaffee"
+                onerror="
+                  this.onerror = null;
+                  this.srcset = '';
+                  this.src = '/img/rottnest/rottnest-22.jpg';
+                "
+              />
+            </div>
+            <div class="descr-box">
+              <h2 class="heading-paragraph">Flat White all the way</h2>
+              <p class="text">
+                Eine australische Erfindung, nachdem ab 1945 italienische
+                Einwanderer die Espressokultur importiert hatten.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Paragraph  -->
+      <section class="section text-only">
+        <div class="container grid grid--max2-cols">
+          <div class="paragraph flow">
+            <p class="text">
+              Auf Rottnest Island nisten 12 Fischadler Paare (Eastern Osprey).
+              Die Raubvögel bleiben ein Leben lang zusammen.
+            </p>
+          </div>
+          <p class="text">
+            Im Gegenteil zu anderen Erdteilen zeigen sich die Vögel
+            heimatverbunden und blieben in Australien ganzjährlich im gleichen
+            Gebiet.
+          </p>
+        </div>
+      </section>
+      <section class="section img-only">
+        <div class="container">
+          <div class="img-only-box">
+            <img
+              src="/cdn-cgi/image/width=2400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-3.jpg"
+              srcset="
+                /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-3.jpg   400w,
+                /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-3.jpg   800w,
+                /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-3.jpg 1200w,
+                /cdn-cgi/image/width=1800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-3.jpg 1800w
+              "
+              sizes="(min-width: 1200px) 1200px, calc(100vw-40px)"
+              loading="lazy"
+              decoding="async"
+              width="4000"
+              height="3000"
+              alt="Osprey in seinem Nest"
+              onerror="
+                this.onerror = null;
+                this.srcset = '';
+                this.src = '/img/rottnest/rottnest-3.jpg';
+              "
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section text-landscape">
+        <div class="container grid grid--max2-cols">
+          <div class="card-container">
+            <div class="img-box-h">
+              <img
+                src="/cdn-cgi/image/width=2400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-23.jpg"
+                srcset="
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-23.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-23.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-23.jpg 1200w,
+                  /cdn-cgi/image/width=1800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-23.jpg 1800w
+                "
+                sizes="(min-width: 1200px) 500px,(min-width: 661px) calc(50vw - 95px), calc(100vw - 90px)"
+                loading="lazy"
+                decoding="async"
+                width="4000"
+                height="3000"
+                alt="Safety first mit Fahrradhelm"
+                onerror="
+                  this.onerror = null;
+                  this.srcset = '';
+                  this.src = '/img/rottnest/rottnest-23.jpg';
+                "
+              />
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="img-box-h">
+              <img
+                src="/cdn-cgi/image/width=2400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-20.jpg"
+                srcset="
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-20.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-20.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-20.jpg 1200w,
+                  /cdn-cgi/image/width=1800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-20.jpg 1800w
+                "
+                sizes="(min-width: 1200px) 500px,(min-width: 661px) calc(50vw - 95px), calc(100vw - 90px)"
+                loading="lazy"
+                decoding="async"
+                width="4000"
+                height="3000"
+                alt="West Point auf Rottnest Island"
+                onerror="
+                  this.onerror = null;
+                  this.srcset = '';
+                  this.src = '/img/rottnest/rottnest-20.jpg';
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section text-only">
+        <div class="container grid grid--max2-cols">
+          <div class="paragraph flow">
+            <p class="text">
+              Freemantle, Perth`s Hafenstadt, benannt nach ihrem britischen
+              Entdecker (19. Jahrhundert) war ursprünglich ein wichtiger Ort für
+              den Walfang.
+            </p>
+          </div>
+          <p class="text">
+            Mittlerweile gilt es als kreatives und kulturelles Zentrum an der
+            Küste Perths. Das entspannte Flair genießt man am Besten bei den
+            atemberaubenden Sonnenuntergängen.
+          </p>
+        </div>
+      </section>
+
+      <!--  Section 2 Hochkant Bilder  -->
+      <section class="section text-img">
+        <div class="container grid grid--max2-cols">
+          <div class="card-container">
+            <div class="img-box">
+              <img
+                src="/cdn-cgi/image/width=2400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-9.jpg"
+                srcset="
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-9.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-9.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-9.jpg 1200w,
+                  /cdn-cgi/image/width=1800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-9.jpg 1800w
+                "
+                sizes="(min-width: 1200px) 500px,(min-width: 661px) calc(50vw - 95px), calc(100vw - 90px)"
+                loading="lazy"
+                decoding="async"
+                width="3000"
+                height="4000"
+                alt="Freemantle"
+                onerror="
+                  this.onerror = null;
+                  this.srcset = '';
+                  this.src = '/img/rottnest/rottnest-9.jpg';
+                "
+              />
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="img-box">
+              <img
+                src="/cdn-cgi/image/width=2400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-12.jpg"
+                srcset="
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-12.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-12.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-12.jpg 1200w,
+                  /cdn-cgi/image/width=1800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-12.jpg 1800w
+                "
+                sizes="(min-width: 1200px) 500px, (min-width: 661px) calc(50vw - 95px), calc(100vw - 90px)"
+                loading="lazy"
+                decoding="async"
+                width="3000"
+                height="4000"
+                alt="Strand in Freemantle zum Sonnenuntergang"
+                onerror="
+                  this.onerror = null;
+                  this.srcset = '';
+                  this.src = '/img/rottnest/rottnest-12.jpg';
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section img-only">
+        <div class="container">
+          <div class="img-only-box">
+            <img
+              src="/cdn-cgi/image/width=2400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-10.jpg"
+              srcset="
+                /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-10.jpg   400w,
+                /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-10.jpg   800w,
+                /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-10.jpg 1200w,
+                /cdn-cgi/image/width=1800,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-10.jpg 1800w
+              "
+              sizes="(min-width: 1200px) 1200px, calc(100vw-40px)"
+              loading="lazy"
+              decoding="async"
+              width="4000"
+              height="3000"
+              alt="Strand in Freemantle zum Sonnenuntergang"
+              onerror="
+                this.onerror = null;
+                this.srcset = '';
+                this.src = '/img/rottnest/rottnest-10.jpg';
+              "
+            />
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <p class="text descr-weiter">
+          Wir versuchen euch regelmäßig auf dem Laufenden zu halten. Aber seid
+          uns bitte nicht böse, wenn hier nur alle paar Tage ein neues Update
+          erscheint.
+        </p>
+      </div>
+      <section class="section section-gallery">
+        <div class="container clickme-container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            fill="#000000"
+            viewBox="0 0 256 256"
+            class="arrowdown"
+          >
+            <path
+              d="M208,32a8,8,0,0,1-8,8,88.1,88.1,0,0,0-88,88v76.69l34.34-34.35a8,8,0,0,1,11.32,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L96,204.69V128A104.11,104.11,0,0,1,200,24,8,8,0,0,1,208,32Z"
+            ></path>
+          </svg>
+          <p class="clickme">Click me</p>
+        </div>
+        <!--
+    Jede Kachel hat:
+    - src      : Fallback für alte Browser
+    - srcset   : mehrere Auflösungen mit ihrer echten Pixelbreite (…w)
+    - sizes    : wie breit die Kachel im Layout TATSÄCHLICH dargestellt wird
+    - data-full: die hochauflösende Version für die Lightbox
+  -->
+        <div class="gallery" id="gallery">
+          <img
+            alt="Bild 1"
+            loading="lazy"
+            src="/cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-1.jpg"
+            srcset="
+              /cdn-cgi/image/width=200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-1.jpg 200w,
+              /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-1.jpg 400w,
+              /cdn-cgi/image/width=600,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-1.jpg 600w
+            "
+            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
+            data-full="/img/rottnest/rottnest-1.jpg"
+            onerror="
+              this.onerror = null;
+              this.srcset = '';
+              this.src = this.dataset.full;
+            "
+          />
+
+          <img
+            alt="Bild 2"
+            loading="lazy"
+            src="/cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-2.jpg"
+            srcset="
+              /cdn-cgi/image/width=200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-2.jpg 200w,
+              /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-2.jpg 400w,
+              /cdn-cgi/image/width=600,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-2.jpg 600w
+            "
+            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
+            data-full="/img/rottnest/rottnest-2.jpg"
+            onerror="
+              this.onerror = null;
+              this.srcset = '';
+              this.src = this.dataset.full;
+            "
+          />
+
+          <img
+            alt="Bild 3"
+            loading="lazy"
+            src="/cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-7.jpg"
+            srcset="
+              /cdn-cgi/image/width=200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-7.jpg 200w,
+              /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-7.jpg 400w,
+              /cdn-cgi/image/width=600,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-7.jpg 600w
+            "
+            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
+            data-full="/img/rottnest/rottnest-7.jpg"
+            onerror="
+              this.onerror = null;
+              this.srcset = '';
+              this.src = this.dataset.full;
+            "
+          />
+
+          <img
+            alt="Bild 4"
+            loading="lazy"
+            src="/cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-11.jpg"
+            srcset="
+              /cdn-cgi/image/width=200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-11.jpg 200w,
+              /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-11.jpg 400w,
+              /cdn-cgi/image/width=600,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-11.jpg 600w
+            "
+            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
+            data-full="/img/rottnest/rottnest-11.jpg"
+            onerror="
+              this.onerror = null;
+              this.srcset = '';
+              this.src = this.dataset.full;
+            "
+          />
+
+          <img
+            alt="Bild 5"
+            loading="lazy"
+            src="/cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-13.jpg"
+            srcset="
+              /cdn-cgi/image/width=200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-13.jpg 200w,
+              /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-13.jpg 400w,
+              /cdn-cgi/image/width=600,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-13.jpg 600w
+            "
+            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
+            data-full="/img/rottnest/rottnest-13.jpg"
+            onerror="
+              this.onerror = null;
+              this.srcset = '';
+              this.src = this.dataset.full;
+            "
+          />
+
+          <img
+            alt="Bild 6"
+            loading="lazy"
+            src="/cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-14.jpg"
+            srcset="
+              /cdn-cgi/image/width=200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-14.jpg 200w,
+              /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-14.jpg 400w,
+              /cdn-cgi/image/width=600,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-14.jpg 600w
+            "
+            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
+            data-full="/img/rottnest/rottnest-14.jpg"
+            onerror="
+              this.onerror = null;
+              this.srcset = '';
+              this.src = this.dataset.full;
+            "
+          />
+
+          <img
+            alt="Bild 7"
+            loading="lazy"
+            src="/cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-17.jpg"
+            srcset="
+              /cdn-cgi/image/width=200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-17.jpg 200w,
+              /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-17.jpg 400w,
+              /cdn-cgi/image/width=600,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-17.jpg 600w
+            "
+            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
+            data-full="/img/rottnest/rottnest-17.jpg"
+            onerror="
+              this.onerror = null;
+              this.srcset = '';
+              this.src = this.dataset.full;
+            "
+          />
+
+          <img
+            alt="Bild 8"
+            loading="lazy"
+            src="/cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-18.jpg"
+            srcset="
+              /cdn-cgi/image/width=200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-18.jpg 200w,
+              /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-18.jpg 400w,
+              /cdn-cgi/image/width=600,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-18.jpg 600w
+            "
+            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
+            data-full="/img/rottnest/rottnest-18.jpg"
+            onerror="
+              this.onerror = null;
+              this.srcset = '';
+              this.src = this.dataset.full;
+            "
+          />
+
+          <img
+            alt="Bild 9"
+            loading="lazy"
+            src="/cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-19.jpg"
+            srcset="
+              /cdn-cgi/image/width=200,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-19.jpg 200w,
+              /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-19.jpg 400w,
+              /cdn-cgi/image/width=600,quality=80,format=auto/https://reiseblog-hollmann.de/img/rottnest/rottnest-19.jpg 600w
+            "
+            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
+            data-full="/img/rottnest/rottnest-19.jpg"
+            onerror="
+              this.onerror = null;
+              this.srcset = '';
+              this.src = this.dataset.full;
+            "
+          />
+
+          <!--  -->
+
+          <!-- <img
+            alt="Bild 10"
+            loading="lazy"
+            src="/cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/singapur/gallery/ch/singapur-6.jpg"
+            srcset="
+              /cdn-cgi/image/width=200,quality=80,format=auto/https://reiseblog-hollmann.de/img/singapur/gallery/ch/singapur-6.jpg 200w,
+              /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/singapur/gallery/ch/singapur-6.jpg 400w,
+              /cdn-cgi/image/width=600,quality=80,format=auto/https://reiseblog-hollmann.de/img/singapur/gallery/ch/singapur-6.jpg 600w
+            "
+            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
+            data-full="/img/singapur/gallery/ch/singapur-6.jpg"
+            onerror="
+              this.onerror = null;
+              this.srcset = '';
+              this.src = this.dataset.full;
+            "
+          />
+
+          <img
+            alt="Bild 11"
+            loading="lazy"
+            src="/cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/singapur/gallery/ch/singapur-1.jpg"
+            srcset="
+              /cdn-cgi/image/width=200,quality=80,format=auto/https://reiseblog-hollmann.de/img/singapur/gallery/ch/singapur-1.jpg 200w,
+              /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/singapur/gallery/ch/singapur-1.jpg 400w,
+              /cdn-cgi/image/width=600,quality=80,format=auto/https://reiseblog-hollmann.de/img/singapur/gallery/ch/singapur-1.jpg 600w
+            "
+            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
+            data-full="/img/singapur/gallery/ch/singapur-1.jpg"
+            onerror="
+              this.onerror = null;
+              this.srcset = '';
+              this.src = this.dataset.full;
+            "
+          />
+
+          <img
+            alt="Bild 12"
+            loading="lazy"
+            src="/cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/singapur/gallery/uh/singapur-2.jpg"
+            srcset="
+              /cdn-cgi/image/width=200,quality=80,format=auto/https://reiseblog-hollmann.de/img/singapur/gallery/uh/singapur-2.jpg 200w,
+              /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/singapur/gallery/uh/singapur-2.jpg 400w,
+              /cdn-cgi/image/width=600,quality=80,format=auto/https://reiseblog-hollmann.de/img/singapur/gallery/uh/singapur-2.jpg 600w
+            "
+            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
+            data-full="/img/singapur/gallery/uh/singapur-2.jpg"
+            onerror="
+              this.onerror = null;
+              this.srcset = '';
+              this.src = this.dataset.full;
+            "
+          />
+
+          <img
+            alt="Bild 13"
+            loading="lazy"
+            src="/cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/singapur/gallery/uh/singapur-8.jpg"
+            srcset="
+              /cdn-cgi/image/width=200,quality=80,format=auto/https://reiseblog-hollmann.de/img/singapur/gallery/uh/singapur-8.jpg 200w,
+              /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/singapur/gallery/uh/singapur-8.jpg 400w,
+              /cdn-cgi/image/width=600,quality=80,format=auto/https://reiseblog-hollmann.de/img/singapur/gallery/uh/singapur-8.jpg 600w
+            "
+            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
+            data-full="/img/singapur/gallery/uh/singapur-8.jpg"
+            onerror="
+              this.onerror = null;
+              this.srcset = '';
+              this.src = this.dataset.full;
+            "
+          />
+
+          <img
+            alt="Bild 14"
+            loading="lazy"
+            src="/cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/singapur/gallery/uh/singapur-14.jpg"
+            srcset="
+              /cdn-cgi/image/width=200,quality=80,format=auto/https://reiseblog-hollmann.de/img/singapur/gallery/uh/singapur-14.jpg 200w,
+              /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/singapur/gallery/uh/singapur-14.jpg 400w,
+              /cdn-cgi/image/width=600,quality=80,format=auto/https://reiseblog-hollmann.de/img/singapur/gallery/uh/singapur-14.jpg 600w
+            "
+            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
+            data-full="/img/singapur/gallery/uh/singapur-14.jpg"
+            onerror="
+              this.onerror = null;
+              this.srcset = '';
+              this.src = this.dataset.full;
+            "
+          />
+          -->
+        </div>
+
+        <!-- Die Lightbox -->
+        <div
+          class="lightbox"
+          id="lightbox"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Bildansicht"
+        >
+          <button class="lb-btn lb-close" id="lbClose" aria-label="Schließen">
+            &times;
+          </button>
+          <button
+            class="lb-btn lb-prev"
+            id="lbPrev"
+            aria-label="Vorheriges Bild"
+          >
+            &#8249;
+          </button>
+          <img id="lbImage" src="" alt="" />
+          <button class="lb-btn lb-next" id="lbNext" aria-label="Nächstes Bild">
+            &#8250;
+          </button>
+          <div class="lb-counter" id="lbCounter"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="section footer">
+      <div class="container grid grid--footer">
+        <div class="footer-copy">
+          <p class="copy">Copyright &copy; 2026</p>
+          <ul class="social-links">
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.instagram.com/mr_holliday90/"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                  ></path></svg
+                ><span>C</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.instagram.com/ulli.rikee/"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                  ></path></svg
+                ><span>U</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Über uns</a>
+            </li>
+            <li>
+              <a class="footer-link" href="mailto:chroll@hotmail.de"
+                >Fragen und Anregungen</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

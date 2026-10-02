@@ -1,0 +1,380 @@
+/* ============================================================
+   FLUID SCALE TOOLBOX — mobile first
+   Basis: 1rem = 10px  |  Skalierungsbereich: 320px → 1440px
+   Alle clamp()-Werte mischen rem + vw → Browser-Zoom bleibt
+   funktionsfähig (WCAG 1.4.4).
+   ============================================================ */
+
+/* ============================================================
+
+    Formel für die Berechnung
+    s = (max − min) / (1440 − 320)          ← Steigung
+    clamp( min/10 rem,  (min − 320·s)/10 rem + s·100 vw,  max/10 rem )
+
+    =========================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: clip;
+  overflow-y: visible;
+}
+
+html {
+  /* 62.5% von 16px = 10px. Prozent statt px, damit die
+     Nutzer-Einstellung im Browser weiter greift. */
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* ---- Schriftgrößen (min → max in px) ------------------- */
+  --fs-h1: clamp(3.1rem, 2.614rem + 1.518vw, 4.8rem); /* 31 → 48 */
+  --fs-h2: clamp(2.5rem, 2.3rem + 0.625vw, 3.2rem); /* 25 → 32 */
+  --fs-h3: clamp(2rem, 1.886rem + 0.357vw, 2.4rem); /* 20 → 24 */
+  --fs-lead: clamp(1.6rem, 1.486rem + 0.357vw, 2rem); /* 16 → 20 */
+  --fs-body: clamp(1.6rem, 1.543rem + 0.179vw, 1.8rem); /* 16 → 18 */
+  --fs-small: clamp(1.4rem, 1.343rem + 0.179vw, 1.6rem); /* 14 → 16 */
+
+  /* ---- Zeilenhöhe: eng bei groß, luftig bei klein -------- */
+  --lh-tight: 1.1;
+  --lh-snug: 1.25;
+  --lh-base: 1.6;
+
+  /* ---- Buchstabenabstand --------------------------------- */
+  --ls-h1: -0.02em;
+  --ls-h2: -0.01em;
+  --ls-h3: 0;
+
+  /* ---- Spacing-Skala (min → max in px) ------------------- */
+  --space-3xs: clamp(0.4rem, 0.371rem + 0.089vw, 0.5rem); /*   4 →   5 */
+  --space-2xs: clamp(0.8rem, 0.743rem + 0.179vw, 1rem); /*   8 →  10 */
+  --space-xs: clamp(1.2rem, 1.086rem + 0.357vw, 1.6rem); /*  12 →  16 */
+  --space-s: clamp(1.6rem, 1.486rem + 0.357vw, 2rem); /*  16 →  20 */
+  --space-m: clamp(2.4rem, 2.171rem + 0.714vw, 3.2rem); /*  24 →  32 */
+  --space-l: clamp(3.2rem, 2.743rem + 1.429vw, 4.8rem); /*  32 →  48 */
+  --space-xl: clamp(4.8rem, 4.343rem + 1.429vw, 6.4rem); /*  48 →  64 */
+  --space-2xl: clamp(6.4rem, 5.486rem + 2.857vw, 9.6rem); /*  64 →  96 */
+  --space-3xl: clamp(9.6rem, 8.686rem + 2.857vw, 12.8rem); /*  96 → 128 */
+
+  /* ---- Layout -------------------------------------------- */
+  --measure: 65ch; /* optimale Zeilenlänge */
+  --gutter: var(--space-s); /* seitlicher Rand      */
+  --content-max: 120rem; /* 1200px               */
+
+  /* ---- Colors -------------------------------------------- */
+
+  /* ---- Ebene 1: Rohpalette ---- */
+
+  /* Teal */
+  --deep-ocean: #14746f;
+  --deep-ocean-dark: #0e5a56;
+  --deep-ocean-deep: #08322f;
+  --azure-mist: #cedfd9;
+
+  /* Terrakotta */
+  --lobster: #c46d5e;
+  --lobster-dark: #9e4e3f;
+  --lobster-mist: #f7e9e1;
+
+  /* Violett */
+  --grape: #574b60;
+  --grape-ink: #3f334d;
+
+  /* Tinte */
+  --ink-900: #2a2333;
+  --ink-700: #332b3d;
+  --ink-500: #574b60;
+
+  /* Papier */
+  --paper: #fafaf8;
+
+  /* Ableitung für Logo */
+
+  --azure-light: #e8f1ee;
+  --lobster-light: #e5b0a4;
+
+  /* ---- Ebene 2: Rollen ---- */
+
+  --color-surface: var(--paper);
+  --color-surface-tint: var(--azure-mist);
+  --color-chrome: var(--grape);
+  --color-on-chrome: var(--azure-mist);
+
+  --color-heading: var(--ink-900);
+  --color-body: var(--ink-700);
+  --color-muted: var(--ink-500);
+
+  --color-accent: var(--deep-ocean-dark);
+  --color-accent-soft: var(--azure-mist);
+  --color-action: var(--lobster-dark);
+  --color-action-soft: var(--lobster-mist);
+  --color-on-action: #ffffff;
+
+  --color-border: rgb(63 51 77 / 0.14);
+  --color-border-strong: rgb(63 51 77 / 0.28);
+
+  /* ---- Rollen im Logo: hier umfärben, nicht im SVG ---- */
+  --logo-ink: var(--grape-ink);
+  --logo-badge: var(--azure-mist);
+  --logo-ring: var(--grape);
+  --logo-ocean: var(--deep-ocean);
+  --logo-land: var(--azure-mist);
+  --logo-bunny: var(--azure-light);
+  --logo-bear: var(--lobster);
+  --logo-bear-2: var(--lobster-light);
+  --logo-accent: var(--lobster);
+
+  /* Shadows */
+
+  /* Border-Radius */
+
+  /* border-radius: 0.5em; */
+}
+
+/* TEST */
+
+/* .header {
+  background-color: var(--color-chrome);
+}
+.section {
+  background: var(--color-surface-tint);
+}
+.background1 {
+}
+.background2 {
+  background: var(--color-surface);
+}
+h1,
+h2,
+h3 {
+  color: var(--color-heading);
+}
+p {
+  color: var(--color-body);
+}
+li {
+  color: var(--color-on-chrome);
+} */
+
+/* ------------------------------------------------------------ */
+
+/* Grid Template: */
+
+/* .grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); 
+  gap: clamp(1rem, 3vw, 2rem);  bzw. gap über margins siehe oben*/
+
+/* sonstige Paddings und Margins, die sich auf kleine Entitäten beziehen wie Buttons eher mit em definieren, sind dann automatisch auf Parent ELement Ebene fluid */
+
+/* Grid:
+.grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } */
+/* oder auf dem Kind: min-width: 0 */
+
+/* Flex:
+.col { flex: 1; min-width: 0; } */
+
+/* für html: 
+<picture>
+  <!-- ab 700px: Querformat -->
+  <source media="(min-width: 700px)"
+          srcset="/cdn-cgi/image/width=700,format=auto,onerror=redirect/img/tromso-quer.jpg 700w,
+                  /cdn-cgi/image/width=1100,format=auto,onerror=redirect/img/tromso-quer.jpg 1100w,
+                  /cdn-cgi/image/width=1500,format=auto,onerror=redirect/img/tromso-quer.jpg 1500w,
+                  /cdn-cgi/image/width=2000,format=auto,onerror=redirect/img/tromso-quer.jpg 2000w"
+          sizes="min(1140px, calc(100vw - 48px))">
+
+  <!-- Fallback = Mobil, Hochformat -->
+  <img src="/cdn-cgi/image/width=700,format=auto,onerror=redirect/img/tromso-hoch.jpg"
+       srcset="/cdn-cgi/image/width=400,format=auto,onerror=redirect/img/tromso-hoch.jpg 400w,
+               /cdn-cgi/image/width=700,format=auto,onerror=redirect/img/tromso-hoch.jpg 700w,
+               /cdn-cgi/image/width=1000,format=auto,onerror=redirect/img/tromso-hoch.jpg 1000w"
+       sizes="calc(100vw - 48px)"
+       alt="Nordlicht über Tromsø">
+</picture> */
+
+/* .hero img {
+  aspect-ratio: 3 / 4;
+  width: 100%;
+}
+@media (min-width: 700px) {
+  .hero img { aspect-ratio: 3 / 2; }
+} */
+
+/* ============================================================
+   ANWENDUNG
+   ============================================================ */
+
+body {
+  font-size: var(--fs-body);
+  line-height: var(--lh-base);
+  background-color: var(--color-surface);
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: var(--color-body);
+}
+
+h1,
+h2,
+h3 {
+  hyphens: none;
+  text-wrap: balance; /* verhindert einzelne Wörter in der letzten Zeile */
+  margin-block: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-h1);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--ls-h2);
+  font-weight: 600;
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--ls-h3);
+  font-weight: 500;
+}
+
+p,
+li {
+  hyphens: auto;
+  hyphenate-limit-chars: 8 4 3;
+  overflow-wrap: break-word;
+  max-width: var(--measure);
+  text-wrap: pretty;
+}
+
+.text-small {
+  font-size: var(--fs-small);
+}
+
+.subheading {
+  text-transform: uppercase;
+}
+
+.subheading-dark {
+  color: var(--color-heading);
+}
+
+/* ---- Rhythmus: Abstände statt Einzel-Margins --------------
+   „Lobotomized Owl“: jedes Element bekommt Abstand zum
+   Vorgänger. Überschriften rücken enger an ihren Folgetext. */
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, var(--space-s));
+}
+
+.flow > h1 + *,
+.flow > h2 + *,
+.flow > h3 + * {
+  --flow-space: var(--space-xs);
+}
+
+.flow > * + h2 {
+  --flow-space: var(--space-l);
+}
+.flow > * + h3 {
+  --flow-space: var(--space-m);
+}
+
+/* ---- Container -------------------------------------------- */
+
+.container {
+  width: 100%;
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  padding-block: var(--space-xl);
+}
+
+/* =========================== */
+/* width Definition für Images die gesamten Container einnehmen */
+
+/* img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
+
+/* =========================== */
+/* width Definition für Gallery Images */
+
+/* .gallery img {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+} */
+
+/* ============ */
+/* ====Grid==== */
+/* ============ */
+
+.grid {
+  display: grid;
+}
+
+.grid--max3-cols {
+  grid-template-columns: repeat(auto-fit, minmax(min(28rem, 100%), 1fr));
+  column-gap: var(--space-m);
+  row-gap: var(--space-l);
+}
+
+.grid--max2-cols {
+  grid-template-columns: repeat(auto-fit, minmax(min(30rem, 100%), 1fr));
+  column-gap: var(--space-m);
+  row-gap: var(--space-l);
+}
+
+.grid--1-cols {
+  grid-template-columns: 1fr;
+  row-gap: var(--space-xl);
+}
+
+/* ============ */
+/* ===Button=== */
+/* ============ */
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  border: none;
+  background-color: var(--color-accent);
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  color: var(--color-on-chrome);
+  font-size: var(--fs-h3);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--color-accent-soft);
+  color: var(--color-body);
+}
+
+.map {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}

@@ -1,0 +1,60 @@
+/* Nutzer mit reduzierter Bewegung: keine Animationen */
+@media (prefers-reduced-motion: reduce) {
+  .lightbox,
+  .lightbox img,
+  .gallery img {
+    transition: none;
+  }
+}
+
+/* ab 661 pixel */
+@media (min-width: 41.3em) {
+  .card-container {
+    justify-content: space-between;
+  }
+  .card-container:last-child {
+    flex-direction: column-reverse;
+  }
+  .map {
+    max-width: 55%;
+  }
+}
+
+@media (max-width: 19em) {
+  .site-title {
+    display: none;
+  }
+
+  .hero-img-container::after {
+    background: linear-gradient(
+      to bottom,
+      rgba(206, 223, 217, 0.85) 0%,
+      rgba(206, 223, 217, 0) 100%
+    );
+  }
+}
+
+@media (max-width: 22em) {
+  .post-hero-img-container::after {
+    background: linear-gradient(
+      to bottom,
+      rgba(206, 223, 217, 0.98) 0%,
+      rgba(206, 223, 217, 0) 100%
+    );
+  }
+}
+
+@media (max-width: 25em) {
+  .grid--footer {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .footer-links {
+    grid-row: 1 / 2;
+  }
+
+  .footer-copy,
+  .footer-links {
+    justify-self: center;
+  }
+}
