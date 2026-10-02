@@ -308,10 +308,10 @@
               <source
                 media="(max-width: 661px)"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/hero-vertical.jpg   400w,
-                  /cdn-cgi/image/width=600,quality=80,format=auto/https://reiseblog-hollmann.de/img/hero-vertical.jpg   600w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/hero-vertical.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/hero-vertical.jpg 1200w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/hero-vertical.jpg   400w,
+                  /cdn-cgi/image/width=600,quality=80,format=auto/https://img.reiseblog-hollmann.de/hero-vertical.jpg   600w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/hero-vertical.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/hero-vertical.jpg 1200w
                 "
                 sizes="100vw"
                 width="3000"
@@ -320,12 +320,12 @@
 
               <!-- Querformat: Standard ab 662px, gleichzeitig Fallback -->
               <img
-                src="/cdn-cgi/image/width=3017,quality=80,format=auto/https://reiseblog-hollmann.de/img/hero-ls.jpg"
+                src="/cdn-cgi/image/width=3017,quality=80,format=auto/https://img.reiseblog-hollmann.de/hero-ls.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/hero-ls.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/hero-ls.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/hero-ls.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/hero-ls.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/hero-ls.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/hero-ls.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/hero-ls.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/hero-ls.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 1200px, 100vw"
                 class="hero-img"
@@ -340,7 +340,7 @@
                     .querySelectorAll('source')
                     .forEach((s) => s.remove());
                   this.srcset = '';
-                  this.src = '/img/hero-ls.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/hero-ls.jpg';
                 "
               />
             </picture>
@@ -353,8 +353,8 @@
           </div>
           <div class="authors-container">
             <div class="author-imgs">
-              <img src="img/author/uh.jpg" alt="Photo of Ulrike" />
-              <img src="img/author/ch.jpg" alt="Photo of Christian" />
+              <img src="https://img.reiseblog-hollmann.de/author/uh.jpg" alt="Photo of Ulrike" />
+              <img src="https://img.reiseblog-hollmann.de/author/ch.jpg" alt="Photo of Christian" />
             </div>
             <p class="authors">Ulrike & Christian</p>
           </div>
@@ -368,12 +368,12 @@
         <div class="container grid grid--1-cols">
           <div class="map-landing">
             <img
-              src="/cdn-cgi/image/width=1800,quality=80,format=auto/https://reiseblog-hollmann.de/img/maps/helens.jpg"
+              src="/cdn-cgi/image/width=1800,quality=80,format=auto/https://img.reiseblog-hollmann.de/maps/helens.jpg"
               srcset="
-                /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/maps/helens.jpg   400w,
-                /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/maps/helens.jpg   800w,
-                /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/maps/helens.jpg 1200w,
-                /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/maps/helens.jpg 1600w
+                /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/maps/helens.jpg   400w,
+                /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/maps/helens.jpg   800w,
+                /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/maps/helens.jpg 1200w,
+                /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/maps/helens.jpg 1600w
               "
               sizes="(min-width: 1200px) 600px, (min-width: 660px) 60vw, calc(100vw - 48px)"
               class="map"
@@ -385,7 +385,7 @@
               onerror="
                 this.onerror = null;
                 this.srcset = '';
-                this.src = '/img/maps/helens.jpg';
+                this.src = 'https://img.reiseblog-hollmann.de/maps/helens.jpg';
               "
             />
           </div>
@@ -421,12 +421,12 @@
           <a href="coles.html" class="card">
             <div class="card-img-container">
               <img
-                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/coles.jpg"
+                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/coles.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/coles.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/coles.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/coles.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/coles.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/coles.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/coles.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/coles.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/coles.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
                 class="card-img"
@@ -438,7 +438,7 @@
                 onerror="
                   this.onerror = null;
                   this.srcset = '';
-                  this.src = '/img/cards/coles.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/cards/coles.jpg';
                 "
               />
             </div>
@@ -449,12 +449,12 @@
           <a href="hobart.html" class="card">
             <div class="card-img-container">
               <img
-                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/hobart.jpg"
+                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/hobart.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/hobart.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/hobart.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/hobart.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/hobart.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/hobart.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/hobart.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/hobart.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/hobart.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
                 class="card-img"
@@ -466,7 +466,7 @@
                 onerror="
                   this.onerror = null;
                   this.srcset = '';
-                  this.src = '/img/cards/hobart.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/cards/hobart.jpg';
                 "
               />
             </div>
@@ -477,12 +477,12 @@
           <a href="sunshine.html" class="card">
             <div class="card-img-container">
               <img
-                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/sunshine.jpg"
+                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/sunshine.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/sunshine.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/sunshine.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/sunshine.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/sunshine.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/sunshine.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/sunshine.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/sunshine.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/sunshine.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
                 class="card-img"
@@ -494,7 +494,7 @@
                 onerror="
                   this.onerror = null;
                   this.srcset = '';
-                  this.src = '/img/cards/sunshine.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/cards/sunshine.jpg';
                 "
               />
             </div>
@@ -505,12 +505,12 @@
           <a href="byron.html" class="card">
             <div class="card-img-container">
               <img
-                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/rainbow.jpg"
+                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/rainbow.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/rainbow.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/rainbow.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/rainbow.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/rainbow.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/rainbow.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/rainbow.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/rainbow.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/rainbow.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
                 class="card-img"
@@ -522,7 +522,7 @@
                 onerror="
                   this.onerror = null;
                   this.srcset = '';
-                  this.src = '/img/cards/rainbow.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/cards/rainbow.jpg';
                 "
               />
             </div>
@@ -533,12 +533,12 @@
           <a href="bluemountains.html" class="card">
             <div class="card-img-container">
               <img
-                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/bluemountains.jpg"
+                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/bluemountains.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/bluemountains.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/bluemountains.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/bluemountains.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/bluemountains.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/bluemountains.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/bluemountains.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/bluemountains.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/bluemountains.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
                 class="card-img"
@@ -550,7 +550,7 @@
                 onerror="
                   this.onerror = null;
                   this.srcset = '';
-                  this.src = '/img/cards/bluemountains.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/cards/bluemountains.jpg';
                 "
               />
             </div>
@@ -561,12 +561,12 @@
           <a href="sydney.html" class="card">
             <div class="card-img-container">
               <img
-                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/sydney.jpg"
+                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/sydney.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/sydney.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/sydney.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/sydney.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/sydney.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/sydney.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/sydney.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/sydney.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/sydney.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
                 class="card-img"
@@ -578,7 +578,7 @@
                 onerror="
                   this.onerror = null;
                   this.srcset = '';
-                  this.src = '/img/cards/sydney.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/cards/sydney.jpg';
                 "
               />
             </div>
@@ -589,12 +589,12 @@
           <a href="princesshighway.html" class="card">
             <div class="card-img-container">
               <img
-                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/princesshighway.jpg"
+                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/princesshighway.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/princesshighway.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/princesshighway.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/princesshighway.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/princesshighway.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/princesshighway.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/princesshighway.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/princesshighway.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/princesshighway.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
                 class="card-img"
@@ -606,7 +606,7 @@
                 onerror="
                   this.onerror = null;
                   this.srcset = '';
-                  this.src = '/img/cards/princesshighway.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/cards/princesshighway.jpg';
                 "
               />
             </div>
@@ -617,12 +617,12 @@
           <a href="melbourne.html" class="card">
             <div class="card-img-container">
               <img
-                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/melbourne.jpg"
+                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/melbourne.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/melbourne.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/melbourne.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/melbourne.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/melbourne.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/melbourne.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/melbourne.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/melbourne.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/melbourne.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
                 class="card-img"
@@ -634,7 +634,7 @@
                 onerror="
                   this.onerror = null;
                   this.srcset = '';
-                  this.src = '/img/cards/melbourne.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/cards/melbourne.jpg';
                 "
               />
             </div>
@@ -645,12 +645,12 @@
           <a href="greatoceanroad.html" class="card">
             <div class="card-img-container">
               <img
-                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/greatoceanroad.jpg"
+                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/greatoceanroad.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/greatoceanroad.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/greatoceanroad.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/greatoceanroad.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/greatoceanroad.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/greatoceanroad.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/greatoceanroad.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/greatoceanroad.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/greatoceanroad.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
                 class="card-img"
@@ -662,7 +662,7 @@
                 onerror="
                   this.onerror = null;
                   this.srcset = '';
-                  this.src = '/img/cards/greatoceanroad.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/cards/greatoceanroad.jpg';
                 "
               />
             </div>
@@ -673,12 +673,12 @@
           <a href="lakealbert.html" class="card">
             <div class="card-img-container">
               <img
-                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/lakealbert.jpg"
+                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/lakealbert.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/lakealbert.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/lakealbert.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/lakealbert.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/lakealbert.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/lakealbert.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/lakealbert.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/lakealbert.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/lakealbert.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
                 class="card-img"
@@ -690,7 +690,7 @@
                 onerror="
                   this.onerror = null;
                   this.srcset = '';
-                  this.src = '/img/cards/lakealbert.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/cards/lakealbert.jpg';
                 "
               />
             </div>
@@ -701,12 +701,12 @@
           <a href="adelaide.html" class="card">
             <div class="card-img-container">
               <img
-                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/adelaide.jpg"
+                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/adelaide.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/adelaide.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/adelaide.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/adelaide.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/adelaide.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/adelaide.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/adelaide.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/adelaide.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/adelaide.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
                 class="card-img"
@@ -718,7 +718,7 @@
                 onerror="
                   this.onerror = null;
                   this.srcset = '';
-                  this.src = '/img/cards/adelaide.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/cards/adelaide.jpg';
                 "
               />
             </div>
@@ -729,12 +729,12 @@
           <a href="nullarbor.html" class="card">
             <div class="card-img-container">
               <img
-                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/nullarbor.jpg"
+                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/nullarbor.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/nullarbor.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/nullarbor.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/nullarbor.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/nullarbor.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/nullarbor.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/nullarbor.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/nullarbor.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/nullarbor.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
                 class="card-img"
@@ -746,7 +746,7 @@
                 onerror="
                   this.onerror = null;
                   this.srcset = '';
-                  this.src = '/img/cards/nullarbor.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/cards/nullarbor.jpg';
                 "
               />
             </div>
@@ -757,12 +757,12 @@
           <a href="esperance.html" class="card">
             <div class="card-img-container">
               <img
-                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/esperance.jpg"
+                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/esperance.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/esperance.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/esperance.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/esperance.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/esperance.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/esperance.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/esperance.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/esperance.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/esperance.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
                 class="card-img"
@@ -774,7 +774,7 @@
                 onerror="
                   this.onerror = null;
                   this.srcset = '';
-                  this.src = '/img/cards/esperance.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/cards/esperance.jpg';
                 "
               />
             </div>
@@ -785,12 +785,12 @@
           <a href="albany.html" class="card">
             <div class="card-img-container">
               <img
-                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/albany.jpg"
+                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/albany.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/albany.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/albany.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/albany.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/albany.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/albany.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/albany.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/albany.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/albany.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
                 class="card-img"
@@ -802,7 +802,7 @@
                 onerror="
                   this.onerror = null;
                   this.srcset = '';
-                  this.src = '/img/cards/albany.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/cards/albany.jpg';
                 "
               />
             </div>
@@ -813,12 +813,12 @@
           <a href="denmark.html" class="card">
             <div class="card-img-container">
               <img
-                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/denmark.jpg"
+                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/denmark.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/denmark.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/denmark.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/denmark.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/denmark.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/denmark.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/denmark.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/denmark.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/denmark.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
                 class="card-img"
@@ -830,7 +830,7 @@
                 onerror="
                   this.onerror = null;
                   this.srcset = '';
-                  this.src = '/img/cards/denmark.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/cards/denmark.jpg';
                 "
               />
             </div>
@@ -841,12 +841,12 @@
           <a href="augusta.html" class="card">
             <div class="card-img-container">
               <img
-                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/augusta.jpg"
+                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/augusta.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/augusta.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/augusta.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/augusta.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/augusta.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/augusta.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/augusta.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/augusta.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/augusta.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
                 class="card-img"
@@ -858,7 +858,7 @@
                 onerror="
                   this.onerror = null;
                   this.srcset = '';
-                  this.src = '/img/cards/augusta.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/cards/augusta.jpg';
                 "
               />
             </div>
@@ -869,12 +869,12 @@
           <a href="margretriver.html" class="card">
             <div class="card-img-container">
               <img
-                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/margretriver.jpg"
+                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/margretriver.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/margretriver.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/margretriver.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/margretriver.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/margretriver.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/margretriver.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/margretriver.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/margretriver.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/margretriver.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
                 class="card-img"
@@ -886,7 +886,7 @@
                 onerror="
                   this.onerror = null;
                   this.srcset = '';
-                  this.src = '/img/cards/margretriver.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/cards/margretriver.jpg';
                 "
               />
             </div>
@@ -897,12 +897,12 @@
           <a href="nambung.html" class="card">
             <div class="card-img-container">
               <img
-                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/nambung.jpg"
+                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/nambung.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/nambung.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/nambung.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/nambung.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/nambung.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/nambung.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/nambung.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/nambung.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/nambung.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
                 class="card-img"
@@ -914,7 +914,7 @@
                 onerror="
                   this.onerror = null;
                   this.srcset = '';
-                  this.src = '/img/cards/nambung.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/cards/nambung.jpg';
                 "
               />
             </div>
@@ -925,12 +925,12 @@
           <a href="perth.html" class="card">
             <div class="card-img-container">
               <img
-                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/perth.jpg"
+                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/perth.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/perth.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/perth.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/perth.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/cards/perth.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/perth.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/perth.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/perth.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/cards/perth.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
                 class="card-img"
@@ -942,7 +942,7 @@
                 onerror="
                   this.onerror = null;
                   this.srcset = '';
-                  this.src = '/img/cards/perth.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/cards/perth.jpg';
                 "
               />
             </div>
@@ -953,12 +953,12 @@
           <a href="rottnest.html" class="card">
             <div class="card-img-container">
               <img
-                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://reiseblog-hollmann.de/img/Cards/rottnest-15.jpg"
+                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://img.reiseblog-hollmann.de/Cards/rottnest-15.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/Cards/rottnest-15.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/Cards/rottnest-15.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/Cards/rottnest-15.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/Cards/rottnest-15.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/Cards/rottnest-15.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/Cards/rottnest-15.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/Cards/rottnest-15.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/Cards/rottnest-15.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
                 class="card-img"
@@ -970,7 +970,7 @@
                 onerror="
                   this.onerror = null;
                   this.srcset = '';
-                  this.src = '/img/cards/rottnest-15.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/cards/rottnest-15.jpg';
                 "
               />
             </div>
@@ -981,12 +981,12 @@
           <a href="singapur.html" class="card">
             <div class="card-img-container">
               <img
-                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://reiseblog-hollmann.de/img/Cards/singapur.jpg"
+                src="/cdn-cgi/image/width=5095,quality=80,format=auto/https://img.reiseblog-hollmann.de/Cards/singapur.jpg"
                 srcset="
-                  /cdn-cgi/image/width=400,quality=80,format=auto/https://reiseblog-hollmann.de/img/Cards/singapur.jpg   400w,
-                  /cdn-cgi/image/width=800,quality=80,format=auto/https://reiseblog-hollmann.de/img/Cards/singapur.jpg   800w,
-                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://reiseblog-hollmann.de/img/Cards/singapur.jpg 1200w,
-                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://reiseblog-hollmann.de/img/Cards/singapur.jpg 1600w
+                  /cdn-cgi/image/width=400,quality=80,format=auto/https://img.reiseblog-hollmann.de/Cards/singapur.jpg   400w,
+                  /cdn-cgi/image/width=800,quality=80,format=auto/https://img.reiseblog-hollmann.de/Cards/singapur.jpg   800w,
+                  /cdn-cgi/image/width=1200,quality=80,format=auto/https://img.reiseblog-hollmann.de/Cards/singapur.jpg 1200w,
+                  /cdn-cgi/image/width=1600,quality=80,format=auto/https://img.reiseblog-hollmann.de/Cards/singapur.jpg 1600w
                 "
                 sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
                 class="card-img"
@@ -998,7 +998,7 @@
                 onerror="
                   this.onerror = null;
                   this.srcset = '';
-                  this.src = '/img/cards/singapur.jpg';
+                  this.src = 'https://img.reiseblog-hollmann.de/cards/singapur.jpg';
                 "
               />
             </div>
