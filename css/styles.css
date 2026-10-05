@@ -711,8 +711,10 @@
 }
 
 .lightbox img {
-  max-width: 90dvw;
-  max-height: 85dvh;
+  /* feste Fläche statt nur Höchstmaße: so wird auch die kleine Vorschau
+     auf volle Größe aufgezogen, object-fit: contain hält das Seitenverhältnis */
+  width: 90dvw;
+  height: 85dvh;
   border-radius: none;
   object-fit: contain;
   touch-action: pan-y; /* vertikales Scrollen erlauben, horizontal wischen wir selbst */

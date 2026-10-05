@@ -27,7 +27,10 @@ if (lightbox) {
       LIGHTBOX_WIDTHS.find((w) => w >= targetWidth) ||
       LIGHTBOX_WIDTHS[LIGHTBOX_WIDTHS.length - 1];
 
-    return `/cdn-cgi/image/width=${width},quality=80,format=auto/${location.origin}${img.dataset.full}`;
+    // data-full ist eine absolute URL (https://img.reiseblog-hollmann.de/...),
+    // relative Pfade werden zur Sicherheit gegen die aktuelle Seite aufgelöst
+    const fullUrl = new URL(img.dataset.full, location.href).href;
+    return `/cdn-cgi/image/width=${width},quality=80,format=auto/${fullUrl}`;
   }
 
   // Bereits im Hintergrund geladene Auflösungen merken, um sie nicht doppelt anzufordern
@@ -63,8 +66,14 @@ if (lightbox) {
     };
     preload.onerror = () => {
       if (currentIndex !== requestIndex) return;
-      lbImage.src = fallbackSrc;
-      lbImage.classList.remove("is-loading");
+      // Original laden und die Unschärfe erst entfernen, wenn es wirklich da ist
+      const fallback = new Image();
+      fallback.onload = fallback.onerror = () => {
+        if (currentIndex !== requestIndex) return;
+        lbImage.src = fallbackSrc;
+        lbImage.classList.remove("is-loading");
+      };
+      fallback.src = fallbackSrc;
     };
     preload.src = nextSrc;
 
