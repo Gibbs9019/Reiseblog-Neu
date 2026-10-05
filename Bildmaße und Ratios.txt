@@ -1,0 +1,30 @@
+index.html 
+
+Hero Vertikal: 3/4, Maße 3000px x 4000px
+
+Hero Landscape: 4/3, Maße 4000px x 3000px
+
+Autoren:
+
+200px x 200px 
+
+Karte 
+
+1 / 1 1800px x 1800px
+
+
+Card Image Posts
+Aspect 3/2   3000px x 2000px
+
+
+
+
+Blogposts
+
+Hero 
+Landscape 4 / 3 4000x 3000px
+
+Blogpost Landscape und vertikal auch diese Maße (evtl das auch nochmal ändern)
+
+Gallery: 3/2 2/3 Vollformat! oder einfac auch 4000x3000
+
