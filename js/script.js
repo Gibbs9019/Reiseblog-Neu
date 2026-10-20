@@ -14,7 +14,8 @@ if (lightbox) {
 
   let currentIndex = 0;
 
-  // Cloudflare liefert nur diese Breiten aus dem Cache -> weniger Origin-Requests
+  // Diese Breiten liegen als fertige AVIF-Dateien auf R2
+  // (muss zu LIGHTBOX_WIDTHS in tools/bilder_avif.py passen)
   const LIGHTBOX_WIDTHS = [640, 1024, 1600, 2000];
 
   function resizedFullSrc(img) {
@@ -29,8 +30,9 @@ if (lightbox) {
 
     // data-full ist eine absolute URL (https://img.reiseblog-hollmann.de/...),
     // relative Pfade werden zur Sicherheit gegen die aktuelle Seite aufgelöst
+    // Variante liegt neben dem Original: .../bild.jpg -> .../bild-1600.avif
     const fullUrl = new URL(img.dataset.full, location.href).href;
-    return `/cdn-cgi/image/width=${width},quality=80,format=auto/${fullUrl}`;
+    return fullUrl.replace(/\.[^./]+$/, `-${width}.avif`);
   }
 
   // Bereits im Hintergrund geladene Auflösungen merken, um sie nicht doppelt anzufordern
