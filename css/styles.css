@@ -330,6 +330,48 @@
   background-color: var(--color-surface-tint);
 }
 
+.land-filter {
+  display: flex;
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+  margin-bottom: var(--space-l);
+  padding: var(--space-3xs);
+  gap: var(--space-3xs);
+  border-radius: 1rem;
+  background-color: var(--color-surface);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.land-filter button {
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  background: none;
+  color: var(--color-body);
+  font-family: inherit;
+  font-size: var(--fs-lead);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.land-filter button:hover {
+  color: var(--color-accent);
+}
+
+.land-filter button[aria-pressed="true"] {
+  background-color: var(--color-accent);
+  color: var(--color-on-chrome);
+}
+
+.land-filter button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
 .card:link,
 .card:visited {
   display: block;
@@ -391,6 +433,11 @@
   margin-inline: auto;
   font-size: var(--fs-h3);
   font-weight: 600;
+}
+
+/* muss nach .card:link stehen, das sonst display: block erzwingt */
+.card[hidden] {
+  display: none;
 }
 
 /* ================ */

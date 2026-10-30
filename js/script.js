@@ -5,6 +5,42 @@ btnMobileNav.addEventListener("click", function () {
   header.classList.toggle("nav-open");
 });
 
+const landFilter = document.querySelector(".land-filter");
+
+if (landFilter) {
+  const landButtons = Array.from(landFilter.querySelectorAll("button"));
+  const cards = document.querySelectorAll(".card[data-land]");
+
+  const showLand = (land) => {
+    landButtons.forEach((btn) => {
+      btn.setAttribute("aria-pressed", btn.dataset.land === land);
+    });
+    cards.forEach((card) => {
+      card.hidden = card.dataset.land !== land;
+    });
+  };
+
+  landButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      showLand(btn.dataset.land);
+      try {
+        sessionStorage.setItem("land", btn.dataset.land);
+      } catch {}
+    });
+  });
+
+  // Auswahl im Tab merken, damit man nach einem Post beim selben Land landet
+  let savedLand = null;
+  try {
+    savedLand = sessionStorage.getItem("land");
+  } catch {}
+  showLand(
+    landButtons.some((btn) => btn.dataset.land === savedLand)
+      ? savedLand
+      : "neuseeland",
+  );
+}
+
 const lightbox = document.getElementById("lightbox");
 
 if (lightbox) {

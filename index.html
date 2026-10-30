@@ -423,8 +423,22 @@
         </div>
       </section>
       <section class="section-posts section" id="section-posts">
+        <div class="container">
+          <div
+            class="land-filter"
+            role="group"
+            aria-label="Beiträge nach Land auswählen"
+          >
+            <button type="button" data-land="neuseeland" aria-pressed="true">
+              Neuseeland
+            </button>
+            <button type="button" data-land="australien" aria-pressed="false">
+              Australien
+            </button>
+          </div>
+        </div>
         <div class="container grid grid--max3-cols">
-          <a href="wairarapa.html" class="card">
+          <a href="wairarapa.html" class="card" data-land="neuseeland">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/martinpoint/Bild-4-5095.avif"
@@ -453,7 +467,7 @@
               <p class="card-description">Wairarapa</p>
             </div>
           </a>
-          <a href="taupo.html" class="card">
+          <a href="taupo.html" class="card" data-land="neuseeland">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/taupo/Bild-14-5095.avif"
@@ -482,7 +496,7 @@
               <p class="card-description">Taupo nach Napier</p>
             </div>
           </a>
-          <a href="rotorua.html" class="card">
+          <a href="rotorua.html" class="card" data-land="neuseeland">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/rotorua/Bild-4-5095.avif"
@@ -511,7 +525,7 @@
               <p class="card-description">Rotorua</p>
             </div>
           </a>
-          <a href="mittelerde.html" class="card">
+          <a href="mittelerde.html" class="card" data-land="neuseeland">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/mittelerde/Bild-5-5095.avif"
@@ -540,7 +554,7 @@
               <p class="card-description">Mittelerde</p>
             </div>
           </a>
-          <a href="coromandel.html" class="card">
+          <a href="coromandel.html" class="card" data-land="neuseeland">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/coromandel/Bild-38-5095.avif"
@@ -569,7 +583,7 @@
               <p class="card-description">Coromandel</p>
             </div>
           </a>
-          <a href="northland.html" class="card">
+          <a href="northland.html" class="card" data-land="neuseeland">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/northland/Bild-32-5095.avif"
@@ -598,7 +612,7 @@
               <p class="card-description">Northland</p>
             </div>
           </a>
-          <a href="auckland.html" class="card">
+          <a href="auckland.html" class="card" data-land="neuseeland">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/auckland/Bild-41-5095.avif"
@@ -627,7 +641,7 @@
               <p class="card-description">Auckland</p>
             </div>
           </a>
-          <a href="nelson.html" class="card">
+          <a href="nelson.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/nelson/Bild-9-5095.avif"
@@ -656,7 +670,7 @@
               <p class="card-description">Nelson Falls nach Hobart</p>
             </div>
           </a>
-          <a href="cradle.html" class="card">
+          <a href="cradle.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/cradle/Bild-5-5095.avif"
@@ -685,7 +699,7 @@
               <p class="card-description">Cradle Mountain National Park</p>
             </div>
           </a>
-          <a href="helens.html" class="card">
+          <a href="helens.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/helens/Bild-14-5095.avif"
@@ -714,7 +728,7 @@
               <p class="card-description">St. Helens</p>
             </div>
           </a>
-          <a href="coles.html" class="card">
+          <a href="coles.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/cards/coles-5095.avif"
@@ -743,7 +757,7 @@
               <p class="card-description">Coles Bay</p>
             </div>
           </a>
-          <a href="hobart.html" class="card">
+          <a href="hobart.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/cards/hobart-5095.avif"
@@ -772,7 +786,7 @@
               <p class="card-description">Hobart</p>
             </div>
           </a>
-          <a href="sunshine.html" class="card">
+          <a href="sunshine.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/cards/sunshine-5095.avif"
@@ -801,7 +815,7 @@
               <p class="card-description">Sunshine Coast</p>
             </div>
           </a>
-          <a href="byron.html" class="card">
+          <a href="byron.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/cards/rainbow-5095.avif"
@@ -830,7 +844,7 @@
               <p class="card-description">Byron Bay</p>
             </div>
           </a>
-          <a href="bluemountains.html" class="card">
+          <a href="bluemountains.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/cards/bluemountains-5095.avif"
@@ -859,7 +873,7 @@
               <p class="card-description">Blue Mountains</p>
             </div>
           </a>
-          <a href="sydney.html" class="card">
+          <a href="sydney.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/cards/sydney-5095.avif"
@@ -888,7 +902,7 @@
               <p class="card-description">Sydney</p>
             </div>
           </a>
-          <a href="princesshighway.html" class="card">
+          <a href="princesshighway.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/cards/princesshighway-5095.avif"
@@ -917,7 +931,7 @@
               <p class="card-description">Princess Highway</p>
             </div>
           </a>
-          <a href="melbourne.html" class="card">
+          <a href="melbourne.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/cards/melbourne-5095.avif"
@@ -946,7 +960,7 @@
               <p class="card-description">Melbourne</p>
             </div>
           </a>
-          <a href="greatoceanroad.html" class="card">
+          <a href="greatoceanroad.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/cards/greatoceanroad-5095.avif"
@@ -975,7 +989,7 @@
               <p class="card-description">Great Ocean Road</p>
             </div>
           </a>
-          <a href="lakealbert.html" class="card">
+          <a href="lakealbert.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/cards/lakealbert-5095.avif"
@@ -1004,7 +1018,7 @@
               <p class="card-description">Lake Albert/Port Fairy</p>
             </div>
           </a>
-          <a href="adelaide.html" class="card">
+          <a href="adelaide.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/cards/adelaide-5095.avif"
@@ -1033,7 +1047,7 @@
               <p class="card-description">Adelaide</p>
             </div>
           </a>
-          <a href="nullarbor.html" class="card">
+          <a href="nullarbor.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/cards/nullarbor-5095.avif"
@@ -1062,7 +1076,7 @@
               <p class="card-description">Eyre Highway</p>
             </div>
           </a>
-          <a href="esperance.html" class="card">
+          <a href="esperance.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/cards/esperance-5095.avif"
@@ -1091,7 +1105,7 @@
               <p class="card-description">Esperance</p>
             </div>
           </a>
-          <a href="albany.html" class="card">
+          <a href="albany.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/cards/albany-5095.avif"
@@ -1120,7 +1134,7 @@
               <p class="card-description">Albany</p>
             </div>
           </a>
-          <a href="denmark.html" class="card">
+          <a href="denmark.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/cards/denmark-5095.avif"
@@ -1149,7 +1163,7 @@
               <p class="card-description">Nach Denmark</p>
             </div>
           </a>
-          <a href="augusta.html" class="card">
+          <a href="augusta.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/cards/augusta-5095.avif"
@@ -1178,7 +1192,7 @@
               <p class="card-description">East Augusta</p>
             </div>
           </a>
-          <a href="margretriver.html" class="card">
+          <a href="margretriver.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/cards/margretriver-5095.avif"
@@ -1207,7 +1221,7 @@
               <p class="card-description">Margret River/Yallingup</p>
             </div>
           </a>
-          <a href="nambung.html" class="card">
+          <a href="nambung.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/cards/nambung-5095.avif"
@@ -1236,7 +1250,7 @@
               <p class="card-description">Nambung National Park</p>
             </div>
           </a>
-          <a href="perth.html" class="card">
+          <a href="perth.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/cards/perth-5095.avif"
@@ -1265,7 +1279,7 @@
               <p class="card-description">Perth</p>
             </div>
           </a>
-          <a href="rottnest.html" class="card">
+          <a href="rottnest.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/Cards/rottnest-15-5095.avif"
@@ -1294,7 +1308,7 @@
               <p class="card-description">Rottnest Island</p>
             </div>
           </a>
-          <a href="singapur.html" class="card">
+          <a href="singapur.html" class="card" data-land="australien">
             <div class="card-img-container">
               <img
                 src="https://img.reiseblog-hollmann.de/Cards/singapur-5095.avif"
