@@ -29,16 +29,43 @@ if (landFilter) {
     });
   });
 
+  // Nav-Links "Neuseeland"/"Australien" führen auf index.html#<land>:
+  // passenden Tab öffnen und zu den Beiträgen scrollen
+  const showLandFromHash = () => {
+    const land = location.hash.slice(1);
+    if (!landButtons.some((btn) => btn.dataset.land === land)) return false;
+    showLand(land);
+    try {
+      sessionStorage.setItem("land", land);
+    } catch {}
+    header.classList.remove("nav-open");
+    document.getElementById("section-posts").scrollIntoView();
+    return true;
+  };
+
+  window.addEventListener("hashchange", showLandFromHash);
+
+  // Erneuter Klick auf denselben Link löst kein hashchange aus
+  document.querySelectorAll(".main-nav-link").forEach((link) => {
+    link.addEventListener("click", () => {
+      if (link.pathname === location.pathname && link.hash === location.hash) {
+        showLandFromHash();
+      }
+    });
+  });
+
   // Auswahl im Tab merken, damit man nach einem Post beim selben Land landet
-  let savedLand = null;
-  try {
-    savedLand = sessionStorage.getItem("land");
-  } catch {}
-  showLand(
-    landButtons.some((btn) => btn.dataset.land === savedLand)
-      ? savedLand
-      : "neuseeland",
-  );
+  if (!showLandFromHash()) {
+    let savedLand = null;
+    try {
+      savedLand = sessionStorage.getItem("land");
+    } catch {}
+    showLand(
+      landButtons.some((btn) => btn.dataset.land === savedLand)
+        ? savedLand
+        : "neuseeland",
+    );
+  }
 }
 
 const lightbox = document.getElementById("lightbox");
