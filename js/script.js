@@ -90,9 +90,13 @@ if (lightbox) {
       .sort((a, b) => a.width - b.width);
   }
 
-  function resizedFullSrc(img) {
+  // Varianten, die schon einmal nicht geladen werden konnten (z.B. noch nicht auf R2)
+  const failedSrcs = new Set();
+
+  // Reihenfolge der Versuche: passende Breite, dann größere, dann kleinere
+  function candidateSrcs(img) {
     const variants = parseSrcset(img);
-    if (!variants.length) return img.currentSrc || img.src;
+    if (!variants.length) return [];
 
     // Seitenverhältnis aus der bereits geladenen Vorschau (ohne Zuschnitt)
     const ratio =
@@ -104,27 +108,34 @@ if (lightbox) {
     const shownWidth = Math.min(boxWidth, boxHeight * ratio);
     const targetWidth = Math.round(shownWidth * (window.devicePixelRatio || 1));
 
-    const pick =
-      variants.find((v) => v.width >= targetWidth) ||
-      variants[variants.length - 1];
-    return new URL(pick.url, location.href).href;
+    let i = variants.findIndex((v) => v.width >= targetWidth);
+    if (i === -1) i = variants.length - 1;
+    const ordered = [
+      ...variants.slice(i),
+      ...variants.slice(0, i).reverse(),
+    ];
+    return ordered
+      .map((v) => new URL(v.url, location.href).href)
+      .filter((src) => !failedSrcs.has(src));
   }
 
   // Bereits im Hintergrund geladene Auflösungen merken, um sie nicht doppelt anzufordern
   const preloadedSrcs = new Set();
 
   function preloadNeighbor(img) {
-    const src = resizedFullSrc(img);
-    if (preloadedSrcs.has(src)) return;
+    const src = candidateSrcs(img)[0];
+    if (!src || preloadedSrcs.has(src)) return;
     preloadedSrcs.add(src);
-    new Image().src = src;
+    const pre = new Image();
+    pre.onerror = () => failedSrcs.add(src);
+    pre.src = src;
   }
 
   const showImage = (index) => {
     currentIndex = (index + images.length) % images.length;
     const requestIndex = currentIndex;
     const img = images[currentIndex];
-    const nextSrc = resizedFullSrc(img);
+    const candidates = candidateSrcs(img);
 
     // Sofort die bereits geladene Grid-Vorschau zeigen (leicht geweichzeichnet),
     // damit beim Öffnen/Blättern nicht erst eine leere Fläche zu sehen ist,
@@ -133,19 +144,29 @@ if (lightbox) {
     lbImage.alt = img.alt;
     lbImage.classList.add("is-loading");
 
-    preloadedSrcs.add(nextSrc);
-    const preload = new Image();
-    preload.onload = () => {
+    // Varianten nacheinander probieren; fehlt eine, die nächste nehmen.
+    // Klappt keine, bei der Vorschau bleiben und nur die Unschärfe entfernen.
+    const tryNext = (k) => {
       if (currentIndex !== requestIndex) return; // Nutzer hat schon weitergeblättert
-      lbImage.src = nextSrc;
-      lbImage.classList.remove("is-loading");
+      if (k >= candidates.length) {
+        lbImage.classList.remove("is-loading");
+        return;
+      }
+      const src = candidates[k];
+      preloadedSrcs.add(src);
+      const preload = new Image();
+      preload.onload = () => {
+        if (currentIndex !== requestIndex) return;
+        lbImage.src = src;
+        lbImage.classList.remove("is-loading");
+      };
+      preload.onerror = () => {
+        failedSrcs.add(src);
+        tryNext(k + 1);
+      };
+      preload.src = src;
     };
-    preload.onerror = () => {
-      if (currentIndex !== requestIndex) return;
-      // Variante fehlt: bei der Vorschau bleiben, nur die Unschärfe entfernen
-      lbImage.classList.remove("is-loading");
-    };
-    preload.src = nextSrc;
+    tryNext(0);
 
     lbCounter.textContent = currentIndex + 1 + " / " + images.length;
 
