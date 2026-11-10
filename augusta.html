@@ -262,7 +262,7 @@
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="index.html">Start</a></li>
           <li>
-            <a class="main-nav-link" href="christchurch.html"
+            <a class="main-nav-link" href="franz.html"
               >Aktueller Post</a
             >
           </li>
@@ -651,7 +651,7 @@
     - src      : Fallback für alte Browser
     - srcset   : mehrere Auflösungen mit ihrer echten Pixelbreite (…w)
     - sizes    : wie breit die Kachel im Layout TATSÄCHLICH dargestellt wird
-    - data-full: die hochauflösende Version für die Lightbox
+    - data-srcset: Varianten für die Lightbox (script.js wählt die passende Breite)
   -->
         <div class="gallery" id="gallery">
           <img
@@ -663,13 +663,14 @@
               https://img.reiseblog-hollmann.de/augusta/Bild-7-400.avif 400w,
               https://img.reiseblog-hollmann.de/augusta/Bild-7-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/augusta/Bild-7.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/augusta/Bild-7-800.avif 800w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-7-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-7-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-7-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-7-2560.avif 2560w
+            "
           />
 
           <img
@@ -681,13 +682,14 @@
               https://img.reiseblog-hollmann.de/augusta/Bild-8-400.avif 400w,
               https://img.reiseblog-hollmann.de/augusta/Bild-8-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/augusta/Bild-8.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/augusta/Bild-8-800.avif 800w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-8-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-8-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-8-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-8-2560.avif 2560w
+            "
           />
 
           <img
@@ -699,13 +701,14 @@
               https://img.reiseblog-hollmann.de/augusta/Bild-11-400.avif 400w,
               https://img.reiseblog-hollmann.de/augusta/Bild-11-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/augusta/Bild-11.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/augusta/Bild-11-800.avif 800w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-11-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-11-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-11-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-11-2560.avif 2560w
+            "
           />
 
           <img
@@ -717,13 +720,14 @@
               https://img.reiseblog-hollmann.de/augusta/Bild-12-400.avif 400w,
               https://img.reiseblog-hollmann.de/augusta/Bild-12-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/augusta/Bild-12.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/augusta/Bild-12-800.avif 800w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-12-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-12-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-12-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-12-2560.avif 2560w
+            "
           />
 
           <img
@@ -735,13 +739,14 @@
               https://img.reiseblog-hollmann.de/augusta/Bild-13-400.avif 400w,
               https://img.reiseblog-hollmann.de/augusta/Bild-13-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/augusta/Bild-13.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/augusta/Bild-13-800.avif 800w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-13-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-13-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-13-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-13-2560.avif 2560w
+            "
           />
 
           <img
@@ -753,13 +758,14 @@
               https://img.reiseblog-hollmann.de/augusta/Bild-14-400.avif 400w,
               https://img.reiseblog-hollmann.de/augusta/Bild-14-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/augusta/Bild-14.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/augusta/Bild-14-800.avif 800w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-14-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-14-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-14-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/augusta/Bild-14-2560.avif 2560w
+            "
           />
 
           <!-- <img
@@ -771,13 +777,14 @@
               https://img.reiseblog-hollmann.de/margretriver/Bild-12-400.avif 400w,
               https://img.reiseblog-hollmann.de/margretriver/Bild-12-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/margretriver/Bild-12.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/margretriver/Bild-12-800.avif 800w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-12-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-12-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-12-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-12-2560.avif 2560w
+            "
           />
 
           <img
@@ -789,13 +796,14 @@
               https://img.reiseblog-hollmann.de/margretriver/Bild-13-400.avif 400w,
               https://img.reiseblog-hollmann.de/margretriver/Bild-13-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/margretriver/Bild-13.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/margretriver/Bild-13-800.avif 800w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-13-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-13-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-13-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-13-2560.avif 2560w
+            "
           />
 
           <img
@@ -807,13 +815,14 @@
               https://img.reiseblog-hollmann.de/margretriver/Bild-14-400.avif 400w,
               https://img.reiseblog-hollmann.de/margretriver/Bild-14-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/margretriver/Bild-14.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/margretriver/Bild-14-800.avif 800w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-14-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-14-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-14-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-14-2560.avif 2560w
+            "
           /> -->
 
           <!-- <img
@@ -825,13 +834,14 @@
               https://img.reiseblog-hollmann.de/margretriver/Bild-15-400.avif 400w,
               https://img.reiseblog-hollmann.de/margretriver/Bild-15-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/margretriver/Bild-15.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/margretriver/Bild-15-800.avif 800w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-15-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-15-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-15-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-15-2560.avif 2560w
+            "
           />
 
           <img
@@ -843,13 +853,14 @@
               https://img.reiseblog-hollmann.de/margretriver/Bild-16-400.avif 400w,
               https://img.reiseblog-hollmann.de/margretriver/Bild-16-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/margretriver/Bild-16.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/margretriver/Bild-16-800.avif 800w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-16-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-16-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-16-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-16-2560.avif 2560w
+            "
           />
 
           <img
@@ -861,13 +872,14 @@
               https://img.reiseblog-hollmann.de/margretriver/Bild-17-400.avif 400w,
               https://img.reiseblog-hollmann.de/margretriver/Bild-17-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/margretriver/Bild-17.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/margretriver/Bild-17-800.avif 800w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-17-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-17-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-17-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-17-2560.avif 2560w
+            "
           />
 
           <img
@@ -879,13 +891,14 @@
               https://img.reiseblog-hollmann.de/margretriver/Bild-18-400.avif 400w,
               https://img.reiseblog-hollmann.de/margretriver/Bild-18-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/margretriver/Bild-18.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/margretriver/Bild-18-800.avif 800w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-18-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-18-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-18-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-18-2560.avif 2560w
+            "
           />
 
           <img
@@ -897,13 +910,14 @@
               https://img.reiseblog-hollmann.de/margretriver/Bild-21-400.avif 400w,
               https://img.reiseblog-hollmann.de/margretriver/Bild-21-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/margretriver/Bild-21.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/margretriver/Bild-21-800.avif 800w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-21-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-21-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-21-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-21-2560.avif 2560w
+            "
           />
 
           <img
@@ -915,13 +929,14 @@
               https://img.reiseblog-hollmann.de/margretriver/Bild-26-400.avif 400w,
               https://img.reiseblog-hollmann.de/margretriver/Bild-26-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/margretriver/Bild-26.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/margretriver/Bild-26-800.avif 800w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-26-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-26-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-26-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/margretriver/Bild-26-2560.avif 2560w
+            "
           /> -->
         </div>
 

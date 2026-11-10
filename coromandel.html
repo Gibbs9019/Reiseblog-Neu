@@ -262,7 +262,7 @@
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="index.html">Start</a></li>
           <li>
-            <a class="main-nav-link" href="christchurch.html">Aktueller Post</a>
+            <a class="main-nav-link" href="franz.html">Aktueller Post</a>
           </li>
           <li><a class="main-nav-link" href="index.html#neuseeland">Neuseeland</a></li>
           <li><a class="main-nav-link" href="index.html#australien">Australien</a></li>
@@ -920,7 +920,7 @@
     - src      : Fallback für alte Browser
     - srcset   : mehrere Auflösungen mit ihrer echten Pixelbreite (…w)
     - sizes    : wie breit die Kachel im Layout TATSÄCHLICH dargestellt wird
-    - data-full: die hochauflösende Version für die Lightbox
+    - data-srcset: Varianten für die Lightbox (script.js wählt die passende Breite)
   -->
         <div class="gallery" id="gallery">
           <img
@@ -932,12 +932,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-1-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-1-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-1.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-1-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-1-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-1-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-1-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-1-2560.avif 2560w
             "
           />
           <img
@@ -949,12 +950,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-3-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-3-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-3.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-3-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-3-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-3-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-3-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-3-2560.avif 2560w
             "
           />
           <img
@@ -966,12 +968,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-4-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-4-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-4.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-4-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-4-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-4-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-4-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-4-2560.avif 2560w
             "
           />
           <img
@@ -983,12 +986,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-5-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-5-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-5.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-5-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-5-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-5-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-5-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-5-2560.avif 2560w
             "
           />
           <img
@@ -1000,12 +1004,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-6-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-6-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-6.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-6-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-6-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-6-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-6-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-6-2560.avif 2560w
             "
           />
           <img
@@ -1017,12 +1022,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-7-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-7-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-7.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-7-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-7-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-7-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-7-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-7-2560.avif 2560w
             "
           />
           <img
@@ -1034,12 +1040,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-8-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-8-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-8.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-8-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-8-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-8-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-8-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-8-2560.avif 2560w
             "
           />
           <img
@@ -1051,12 +1058,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-10-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-10-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-10.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-10-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-10-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-10-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-10-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-10-2560.avif 2560w
             "
           />
           <img
@@ -1068,12 +1076,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-11-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-11-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-11.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-11-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-11-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-11-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-11-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-11-2560.avif 2560w
             "
           />
           <img
@@ -1085,12 +1094,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-12-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-12-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-12.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-12-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-12-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-12-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-12-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-12-2560.avif 2560w
             "
           />
           <img
@@ -1102,12 +1112,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-13-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-13-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-13.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-13-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-13-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-13-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-13-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-13-2560.avif 2560w
             "
           />
           <img
@@ -1119,12 +1130,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-14-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-14-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-14.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-14-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-14-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-14-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-14-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-14-2560.avif 2560w
             "
           />
           <img
@@ -1136,12 +1148,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-15-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-15-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-15.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-15-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-15-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-15-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-15-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-15-2560.avif 2560w
             "
           />
           <img
@@ -1153,12 +1166,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-16-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-16-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-16.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-16-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-16-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-16-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-16-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-16-2560.avif 2560w
             "
           />
           <img
@@ -1170,12 +1184,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-20-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-20-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-20.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-20-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-20-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-20-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-20-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-20-2560.avif 2560w
             "
           />
           <img
@@ -1187,12 +1202,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-21-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-21-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-21.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-21-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-21-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-21-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-21-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-21-2560.avif 2560w
             "
           />
           <img
@@ -1204,12 +1220,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-22-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-22-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-22.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-22-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-22-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-22-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-22-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-22-2560.avif 2560w
             "
           />
           <img
@@ -1221,12 +1238,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-24-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-24-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-24.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-24-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-24-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-24-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-24-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-24-2560.avif 2560w
             "
           />
           <img
@@ -1238,12 +1256,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-25-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-25-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-25.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-25-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-25-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-25-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-25-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-25-2560.avif 2560w
             "
           />
           <img
@@ -1255,12 +1274,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-27-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-27-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-27.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-27-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-27-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-27-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-27-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-27-2560.avif 2560w
             "
           />
           <img
@@ -1272,12 +1292,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-28-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-28-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-28.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-28-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-28-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-28-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-28-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-28-2560.avif 2560w
             "
           />
           <img
@@ -1289,12 +1310,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-29-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-29-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-29.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-29-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-29-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-29-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-29-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-29-2560.avif 2560w
             "
           />
           <img
@@ -1306,12 +1328,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-30-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-30-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-30.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-30-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-30-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-30-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-30-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-30-2560.avif 2560w
             "
           />
           <img
@@ -1323,12 +1346,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-31-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-31-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-31.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-31-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-31-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-31-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-31-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-31-2560.avif 2560w
             "
           />
           <img
@@ -1340,12 +1364,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-33-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-33-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-33.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-33-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-33-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-33-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-33-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-33-2560.avif 2560w
             "
           />
           <img
@@ -1357,12 +1382,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-35-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-35-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-35.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-35-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-35-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-35-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-35-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-35-2560.avif 2560w
             "
           />
           <img
@@ -1374,12 +1400,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-36-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-36-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-36.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-36-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-36-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-36-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-36-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-36-2560.avif 2560w
             "
           />
           <img
@@ -1391,12 +1418,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-37-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-37-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-37.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-37-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-37-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-37-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-37-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-37-2560.avif 2560w
             "
           />
           <img
@@ -1408,12 +1436,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-39-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-39-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-39.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-39-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-39-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-39-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-39-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-39-2560.avif 2560w
             "
           />
           <img
@@ -1425,12 +1454,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-41-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-41-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-41.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-41-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-41-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-41-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-41-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-41-2560.avif 2560w
             "
           />
           <img
@@ -1442,12 +1472,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-42-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-42-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-42.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-42-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-42-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-42-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-42-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-42-2560.avif 2560w
             "
           />
           <img
@@ -1459,12 +1490,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-43-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-43-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-43.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-43-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-43-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-43-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-43-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-43-2560.avif 2560w
             "
           />
           <img
@@ -1476,12 +1508,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-44-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-44-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-44.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-44-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-44-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-44-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-44-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-44-2560.avif 2560w
             "
           />
           <img
@@ -1493,12 +1526,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-45-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-45-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-45.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-45-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-45-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-45-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-45-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-45-2560.avif 2560w
             "
           />
           <img
@@ -1510,12 +1544,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-46-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-46-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-46.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-46-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-46-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-46-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-46-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-46-2560.avif 2560w
             "
           />
           <img
@@ -1527,12 +1562,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-47-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-47-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-47.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-47-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-47-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-47-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-47-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-47-2560.avif 2560w
             "
           />
           <img
@@ -1544,12 +1580,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-49-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-49-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-49.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-49-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-49-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-49-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-49-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-49-2560.avif 2560w
             "
           />
           <img
@@ -1561,12 +1598,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-50-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-50-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-50.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-50-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-50-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-50-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-50-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-50-2560.avif 2560w
             "
           />
           <img
@@ -1578,12 +1616,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-51-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-51-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-51.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-51-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-51-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-51-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-51-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-51-2560.avif 2560w
             "
           />
           <img
@@ -1595,12 +1634,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-52-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-52-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-52.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-52-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-52-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-52-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-52-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-52-2560.avif 2560w
             "
           />
           <img
@@ -1612,12 +1652,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-53-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-53-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-53.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-53-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-53-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-53-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-53-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-53-2560.avif 2560w
             "
           />
           <img
@@ -1629,12 +1670,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-55-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-55-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-55.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-55-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-55-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-55-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-55-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-55-2560.avif 2560w
             "
           />
           <img
@@ -1646,12 +1688,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-57-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-57-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-57.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-57-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-57-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-57-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-57-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-57-2560.avif 2560w
             "
           />
           <img
@@ -1663,12 +1706,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-58-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-58-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-58.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-58-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-58-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-58-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-58-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-58-2560.avif 2560w
             "
           />
           <img
@@ -1680,12 +1724,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-59-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-59-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-59.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-59-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-59-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-59-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-59-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-59-2560.avif 2560w
             "
           />
           <img
@@ -1697,12 +1742,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-60-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-60-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-60.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-60-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-60-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-60-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-60-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-60-2560.avif 2560w
             "
           />
           <img
@@ -1714,12 +1760,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-61-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-61-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-61.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-61-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-61-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-61-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-61-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-61-2560.avif 2560w
             "
           />
           <img
@@ -1731,12 +1778,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-62-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-62-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-62.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-62-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-62-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-62-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-62-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-62-2560.avif 2560w
             "
           />
           <img
@@ -1748,12 +1796,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-63-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-63-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-63.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-63-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-63-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-63-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-63-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-63-2560.avif 2560w
             "
           />
           <img
@@ -1765,12 +1814,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-65-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-65-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-65.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-65-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-65-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-65-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-65-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-65-2560.avif 2560w
             "
           />
           <img
@@ -1782,12 +1832,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-66-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-66-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-66.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-66-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-66-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-66-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-66-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-66-2560.avif 2560w
             "
           />
           <img
@@ -1799,12 +1850,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-67-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-67-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-67.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-67-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-67-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-67-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-67-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-67-2560.avif 2560w
             "
           />
           <img
@@ -1816,12 +1868,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-69-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-69-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-69.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-69-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-69-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-69-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-69-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-69-2560.avif 2560w
             "
           />
           <img
@@ -1833,12 +1886,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-70-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-70-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-70.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-70-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-70-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-70-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-70-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-70-2560.avif 2560w
             "
           />
           <img
@@ -1850,12 +1904,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-72-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-72-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-72.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-72-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-72-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-72-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-72-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-72-2560.avif 2560w
             "
           />
           <img
@@ -1867,12 +1922,13 @@
               https://img.reiseblog-hollmann.de/coromandel/Bild-73-400.avif 400w,
               https://img.reiseblog-hollmann.de/coromandel/Bild-73-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/coromandel/Bild-73.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/coromandel/Bild-73-800.avif 800w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-73-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-73-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-73-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/coromandel/Bild-73-2560.avif 2560w
             "
           />
         </div>

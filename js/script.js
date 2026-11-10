@@ -77,25 +77,37 @@ if (lightbox) {
 
   let currentIndex = 0;
 
-  // Diese Breiten liegen als fertige AVIF-Dateien auf R2
-  // (muss zu LIGHTBOX_WIDTHS in tools/bilder_avif.py passen)
-  const LIGHTBOX_WIDTHS = [640, 1024, 1600, 2000];
+  // Jede Galerie-Kachel trägt in data-srcset ihre Lightbox-Varianten
+  // ("url 800w, url 1200w, ..."). Gewählt wird die kleinste Variante,
+  // die mindestens so breit ist, wie das Bild in der Lightbox wirklich
+  // dargestellt wird (Fläche 90dvw x 85dvh, object-fit: contain).
+  function parseSrcset(img) {
+    return (img.dataset.srcset || "")
+      .split(",")
+      .map((part) => part.trim().split(/\s+/))
+      .filter(([url, w]) => url && /^\d+w$/.test(w))
+      .map(([url, w]) => ({ url, width: parseInt(w, 10) }))
+      .sort((a, b) => a.width - b.width);
+  }
 
   function resizedFullSrc(img) {
-    if (!img.dataset.full) return img.currentSrc || img.src;
+    const variants = parseSrcset(img);
+    if (!variants.length) return img.currentSrc || img.src;
 
-    const targetWidth = Math.round(
-      window.innerWidth * 0.9 * (window.devicePixelRatio || 1),
-    );
-    const width =
-      LIGHTBOX_WIDTHS.find((w) => w >= targetWidth) ||
-      LIGHTBOX_WIDTHS[LIGHTBOX_WIDTHS.length - 1];
+    // Seitenverhältnis aus der bereits geladenen Vorschau (ohne Zuschnitt)
+    const ratio =
+      img.naturalWidth && img.naturalHeight
+        ? img.naturalWidth / img.naturalHeight
+        : 4 / 3;
+    const boxWidth = window.innerWidth * 0.9;
+    const boxHeight = window.innerHeight * 0.85;
+    const shownWidth = Math.min(boxWidth, boxHeight * ratio);
+    const targetWidth = Math.round(shownWidth * (window.devicePixelRatio || 1));
 
-    // data-full ist eine absolute URL (https://img.reiseblog-hollmann.de/...),
-    // relative Pfade werden zur Sicherheit gegen die aktuelle Seite aufgelöst
-    // Variante liegt neben dem Original: .../bild.jpg -> .../bild-1600.avif
-    const fullUrl = new URL(img.dataset.full, location.href).href;
-    return fullUrl.replace(/\.[^./]+$/, `-${width}.avif`);
+    const pick =
+      variants.find((v) => v.width >= targetWidth) ||
+      variants[variants.length - 1];
+    return new URL(pick.url, location.href).href;
   }
 
   // Bereits im Hintergrund geladene Auflösungen merken, um sie nicht doppelt anzufordern
@@ -112,7 +124,6 @@ if (lightbox) {
     currentIndex = (index + images.length) % images.length;
     const requestIndex = currentIndex;
     const img = images[currentIndex];
-    const fallbackSrc = img.dataset.full || img.currentSrc || img.src;
     const nextSrc = resizedFullSrc(img);
 
     // Sofort die bereits geladene Grid-Vorschau zeigen (leicht geweichzeichnet),
@@ -131,14 +142,8 @@ if (lightbox) {
     };
     preload.onerror = () => {
       if (currentIndex !== requestIndex) return;
-      // Original laden und die Unschärfe erst entfernen, wenn es wirklich da ist
-      const fallback = new Image();
-      fallback.onload = fallback.onerror = () => {
-        if (currentIndex !== requestIndex) return;
-        lbImage.src = fallbackSrc;
-        lbImage.classList.remove("is-loading");
-      };
-      fallback.src = fallbackSrc;
+      // Variante fehlt: bei der Vorschau bleiben, nur die Unschärfe entfernen
+      lbImage.classList.remove("is-loading");
     };
     preload.src = nextSrc;
 

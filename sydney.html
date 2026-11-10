@@ -262,7 +262,7 @@
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="index.html">Start</a></li>
           <li>
-            <a class="main-nav-link" href="christchurch.html"
+            <a class="main-nav-link" href="franz.html"
               >Aktueller Post</a
             >
           </li>
@@ -797,7 +797,7 @@
     - src      : Fallback für alte Browser
     - srcset   : mehrere Auflösungen mit ihrer echten Pixelbreite (…w)
     - sizes    : wie breit die Kachel im Layout TATSÄCHLICH dargestellt wird
-    - data-full: die hochauflösende Version für die Lightbox
+    - data-srcset: Varianten für die Lightbox (script.js wählt die passende Breite)
   -->
         <div class="gallery" id="gallery">
           <img
@@ -809,12 +809,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-5-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-5-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-5.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-5-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-5-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-5-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-5-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-5-2560.avif 2560w
             "
           />
           <img
@@ -826,12 +827,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-6-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-6-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-6.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-6-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-6-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-6-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-6-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-6-2560.avif 2560w
             "
           />
           <img
@@ -843,12 +845,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-7-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-7-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-7.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-7-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-7-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-7-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-7-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-7-2560.avif 2560w
             "
           />
           <img
@@ -860,12 +863,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-8-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-8-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-8.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-8-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-8-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-8-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-8-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-8-2560.avif 2560w
             "
           />
           <img
@@ -877,12 +881,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-9-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-9-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-9.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-9-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-9-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-9-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-9-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-9-2560.avif 2560w
             "
           />
           <img
@@ -894,12 +899,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-10-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-10-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-10.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-10-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-10-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-10-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-10-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-10-2560.avif 2560w
             "
           />
           <img
@@ -911,12 +917,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-11-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-11-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-11.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-11-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-11-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-11-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-11-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-11-2560.avif 2560w
             "
           />
           <img
@@ -928,12 +935,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-12-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-12-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-12.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-12-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-12-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-12-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-12-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-12-2560.avif 2560w
             "
           />
           <img
@@ -945,12 +953,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-13-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-13-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-13.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-13-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-13-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-13-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-13-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-13-2560.avif 2560w
             "
           />
           <img
@@ -962,12 +971,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-14-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-14-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-14.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-14-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-14-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-14-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-14-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-14-2560.avif 2560w
             "
           />
           <img
@@ -979,12 +989,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-15-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-15-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-15.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-15-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-15-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-15-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-15-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-15-2560.avif 2560w
             "
           />
           <img
@@ -996,12 +1007,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-16-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-16-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-16.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-16-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-16-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-16-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-16-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-16-2560.avif 2560w
             "
           />
           <img
@@ -1013,12 +1025,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-17-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-17-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-17.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-17-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-17-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-17-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-17-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-17-2560.avif 2560w
             "
           />
           <img
@@ -1030,12 +1043,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-19-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-19-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-19.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-19-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-19-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-19-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-19-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-19-2560.avif 2560w
             "
           />
           <img
@@ -1047,12 +1061,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-21-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-21-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-21.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-21-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-21-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-21-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-21-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-21-2560.avif 2560w
             "
           />
           <img
@@ -1064,12 +1079,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-24-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-24-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-24.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-24-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-24-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-24-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-24-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-24-2560.avif 2560w
             "
           />
           <img
@@ -1081,12 +1097,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-25-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-25-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-25.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-25-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-25-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-25-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-25-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-25-2560.avif 2560w
             "
           />
           <img
@@ -1098,12 +1115,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-26-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-26-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-26.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-26-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-26-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-26-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-26-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-26-2560.avif 2560w
             "
           />
           <img
@@ -1115,12 +1133,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-27-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-27-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-27.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-27-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-27-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-27-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-27-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-27-2560.avif 2560w
             "
           />
           <img
@@ -1132,12 +1151,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-28-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-28-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-28.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-28-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-28-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-28-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-28-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-28-2560.avif 2560w
             "
           />
           <img
@@ -1149,12 +1169,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-29-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-29-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-29.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-29-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-29-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-29-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-29-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-29-2560.avif 2560w
             "
           />
           <img
@@ -1166,12 +1187,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-30-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-30-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-30.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-30-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-30-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-30-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-30-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-30-2560.avif 2560w
             "
           />
           <img
@@ -1183,12 +1205,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-32-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-32-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-32.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-32-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-32-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-32-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-32-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-32-2560.avif 2560w
             "
           />
           <img
@@ -1200,12 +1223,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-33-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-33-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-33.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-33-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-33-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-33-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-33-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-33-2560.avif 2560w
             "
           />
           <img
@@ -1217,12 +1241,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-35-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-35-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-35.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-35-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-35-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-35-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-35-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-35-2560.avif 2560w
             "
           />
           <img
@@ -1234,12 +1259,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-36-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-36-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-36.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-36-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-36-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-36-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-36-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-36-2560.avif 2560w
             "
           />
           <img
@@ -1251,12 +1277,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-37-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-37-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-37.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-37-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-37-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-37-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-37-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-37-2560.avif 2560w
             "
           />
           <img
@@ -1268,12 +1295,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-39-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-39-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-39.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-39-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-39-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-39-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-39-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-39-2560.avif 2560w
             "
           />
           <img
@@ -1285,12 +1313,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-40-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-40-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-40.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-40-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-40-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-40-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-40-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-40-2560.avif 2560w
             "
           />
           <img
@@ -1302,12 +1331,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-41-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-41-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-41.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-41-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-41-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-41-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-41-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-41-2560.avif 2560w
             "
           />
           <img
@@ -1319,12 +1349,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-42-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-42-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-42.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-42-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-42-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-42-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-42-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-42-2560.avif 2560w
             "
           />
           <img
@@ -1336,12 +1367,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-43-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-43-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-43.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-43-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-43-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-43-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-43-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-43-2560.avif 2560w
             "
           />
           <img
@@ -1353,12 +1385,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-45-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-45-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-45.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-45-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-45-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-45-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-45-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-45-2560.avif 2560w
             "
           />
           <img
@@ -1370,12 +1403,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-46-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-46-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-46.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-46-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-46-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-46-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-46-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-46-2560.avif 2560w
             "
           />
           <img
@@ -1387,12 +1421,13 @@
               https://img.reiseblog-hollmann.de/sydney/Bild-47-400.avif 400w,
               https://img.reiseblog-hollmann.de/sydney/Bild-47-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sydney/Bild-47.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sydney/Bild-47-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-47-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-47-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-47-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sydney/Bild-47-2560.avif 2560w
             "
           />
         </div>

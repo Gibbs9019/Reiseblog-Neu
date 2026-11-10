@@ -262,7 +262,7 @@
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="index.html">Start</a></li>
           <li>
-            <a class="main-nav-link" href="christchurch.html"
+            <a class="main-nav-link" href="franz.html"
               >Aktueller Post</a
             >
           </li>
@@ -853,7 +853,7 @@
     - src      : Fallback für alte Browser
     - srcset   : mehrere Auflösungen mit ihrer echten Pixelbreite (…w)
     - sizes    : wie breit die Kachel im Layout TATSÄCHLICH dargestellt wird
-    - data-full: die hochauflösende Version für die Lightbox
+    - data-srcset: Varianten für die Lightbox (script.js wählt die passende Breite)
   -->
         <div class="gallery" id="gallery">
           <img
@@ -865,13 +865,14 @@
               https://img.reiseblog-hollmann.de/singapur/gallery/singapur-1-400.avif 400w,
               https://img.reiseblog-hollmann.de/singapur/gallery/singapur-1-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/singapur/gallery/singapur-1.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-1-800.avif 800w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-1-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-1-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-1-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-1-2560.avif 2560w
+            "
           />
 
           <img
@@ -883,13 +884,14 @@
               https://img.reiseblog-hollmann.de/singapur/gallery/hero-400.avif 400w,
               https://img.reiseblog-hollmann.de/singapur/gallery/hero-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/singapur/gallery/hero.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/singapur/gallery/hero-800.avif 800w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/hero-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/hero-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/hero-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/hero-2560.avif 2560w
+            "
           />
 
           <img
@@ -901,13 +903,14 @@
               https://img.reiseblog-hollmann.de/singapur/gallery/singapur-6-400.avif 400w,
               https://img.reiseblog-hollmann.de/singapur/gallery/singapur-6-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/singapur/gallery/singapur-6.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-6-800.avif 800w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-6-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-6-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-6-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-6-2560.avif 2560w
+            "
           />
 
           <img
@@ -919,13 +922,14 @@
               https://img.reiseblog-hollmann.de/singapur/gallery/singapur-8-400.avif 400w,
               https://img.reiseblog-hollmann.de/singapur/gallery/singapur-8-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/singapur/gallery/singapur-8.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-8-800.avif 800w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-8-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-8-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-8-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-8-2560.avif 2560w
+            "
           />
 
           <img
@@ -937,13 +941,14 @@
               https://img.reiseblog-hollmann.de/singapur/gallery/singapur-10-400.avif 400w,
               https://img.reiseblog-hollmann.de/singapur/gallery/singapur-10-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/singapur/gallery/singapur-10.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-10-800.avif 800w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-10-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-10-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-10-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-10-2560.avif 2560w
+            "
           />
 
           <img
@@ -955,13 +960,14 @@
               https://img.reiseblog-hollmann.de/singapur/gallery/singapur-11-400.avif 400w,
               https://img.reiseblog-hollmann.de/singapur/gallery/singapur-11-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/singapur/gallery/singapur-11.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-11-800.avif 800w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-11-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-11-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-11-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-11-2560.avif 2560w
+            "
           />
 
           <img
@@ -973,13 +979,14 @@
               https://img.reiseblog-hollmann.de/singapur/gallery/singapur-12-400.avif 400w,
               https://img.reiseblog-hollmann.de/singapur/gallery/singapur-12-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/singapur/gallery/singapur-12.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-12-800.avif 800w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-12-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-12-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-12-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-12-2560.avif 2560w
+            "
           />
 
           <img
@@ -991,13 +998,14 @@
               https://img.reiseblog-hollmann.de/singapur/gallery/singapur-13-400.avif 400w,
               https://img.reiseblog-hollmann.de/singapur/gallery/singapur-13-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/singapur/gallery/singapur-13.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-13-800.avif 800w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-13-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-13-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-13-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-13-2560.avif 2560w
+            "
           />
 
           <img
@@ -1009,13 +1017,14 @@
               https://img.reiseblog-hollmann.de/singapur/gallery/singapur-15-400.avif 400w,
               https://img.reiseblog-hollmann.de/singapur/gallery/singapur-15-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/singapur/gallery/singapur-15.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-15-800.avif 800w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-15-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-15-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-15-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/singapur-15-2560.avif 2560w
+            "
           />
 
           <!--  -->
@@ -1029,13 +1038,14 @@
               https://img.reiseblog-hollmann.de/singapur/gallery/ch/singapur-6-400.avif 400w,
               https://img.reiseblog-hollmann.de/singapur/gallery/ch/singapur-6-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/singapur/gallery/ch/singapur-6.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/singapur/gallery/ch/singapur-6-800.avif 800w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/ch/singapur-6-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/ch/singapur-6-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/ch/singapur-6-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/ch/singapur-6-2560.avif 2560w
+            "
           />
 
           <img
@@ -1047,13 +1057,14 @@
               https://img.reiseblog-hollmann.de/singapur/gallery/ch/singapur-1-400.avif 400w,
               https://img.reiseblog-hollmann.de/singapur/gallery/ch/singapur-1-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/singapur/gallery/ch/singapur-1.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/singapur/gallery/ch/singapur-1-800.avif 800w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/ch/singapur-1-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/ch/singapur-1-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/ch/singapur-1-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/ch/singapur-1-2560.avif 2560w
+            "
           />
 
           <img
@@ -1065,13 +1076,14 @@
               https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-2-400.avif 400w,
               https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-2-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-2.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-2-800.avif 800w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-2-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-2-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-2-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-2-2560.avif 2560w
+            "
           />
 
           <img
@@ -1083,13 +1095,14 @@
               https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-8-400.avif 400w,
               https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-8-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-8.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-8-800.avif 800w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-8-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-8-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-8-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-8-2560.avif 2560w
+            "
           />
 
           <img
@@ -1101,13 +1114,14 @@
               https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-14-400.avif 400w,
               https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-14-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-14.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
-            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-14-800.avif 800w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-14-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-14-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-14-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/singapur/gallery/uh/singapur-14-2560.avif 2560w
+            "
           />
         </div>
 

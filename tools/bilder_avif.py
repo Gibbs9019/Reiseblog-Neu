@@ -34,8 +34,10 @@ PROJECT = Path(__file__).resolve().parent.parent
 IMG_DIR = PROJECT / "img"  # lokale Originale, gleiche Struktur wie auf R2
 HOST = "https://img.reiseblog-hollmann.de"
 
-# Muss zu LIGHTBOX_WIDTHS in js/script.js passen
-LIGHTBOX_WIDTHS = [640, 1024, 1600, 2000]
+# Nur noch für alte Seiten mit data-full="...jpg" relevant. Neue Galerien schreiben
+# ihre Lightbox-Varianten ausdrücklich in data-srcset (...-800.avif 800w, ...);
+# diese URLs erkennt AVIF_RX direkt, die Breiten kommen also aus dem HTML.
+LIGHTBOX_WIDTHS = [800, 1200, 1600, 2048, 2560]
 
 AVIF_QUALITY = 60  # entspricht optisch etwa JPEG-Qualität 80
 AVIF_SPEED = 6  # 0 = langsam/klein ... 10 = schnell/größer

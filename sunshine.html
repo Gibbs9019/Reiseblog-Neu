@@ -262,7 +262,7 @@
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="index.html">Start</a></li>
           <li>
-            <a class="main-nav-link" href="christchurch.html">Aktueller Post</a>
+            <a class="main-nav-link" href="franz.html">Aktueller Post</a>
           </li>
           <li><a class="main-nav-link" href="index.html#neuseeland">Neuseeland</a></li>
           <li><a class="main-nav-link" href="index.html#australien">Australien</a></li>
@@ -798,7 +798,7 @@
     - src      : Fallback für alte Browser
     - srcset   : mehrere Auflösungen mit ihrer echten Pixelbreite (…w)
     - sizes    : wie breit die Kachel im Layout TATSÄCHLICH dargestellt wird
-    - data-full: die hochauflösende Version für die Lightbox
+    - data-srcset: Varianten für die Lightbox (script.js wählt die passende Breite)
   -->
         <div class="gallery" id="gallery">
           <img
@@ -810,12 +810,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-3-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-3-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-3.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-3-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-3-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-3-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-3-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-3-2560.avif 2560w
             "
           />
           <img
@@ -827,12 +828,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-5-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-5-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-5.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-5-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-5-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-5-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-5-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-5-2560.avif 2560w
             "
           />
           <img
@@ -844,12 +846,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-8-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-8-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-8.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-8-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-8-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-8-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-8-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-8-2560.avif 2560w
             "
           />
           <img
@@ -861,12 +864,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-10-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-10-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-10.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-10-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-10-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-10-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-10-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-10-2560.avif 2560w
             "
           />
           <img
@@ -878,12 +882,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-11-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-11-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-11.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-11-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-11-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-11-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-11-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-11-2560.avif 2560w
             "
           />
           <img
@@ -895,12 +900,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-13-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-13-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-13.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-13-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-13-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-13-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-13-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-13-2560.avif 2560w
             "
           />
           <img
@@ -912,12 +918,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-14-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-14-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-14.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-14-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-14-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-14-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-14-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-14-2560.avif 2560w
             "
           />
           <img
@@ -929,12 +936,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-15-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-15-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-15.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-15-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-15-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-15-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-15-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-15-2560.avif 2560w
             "
           />
           <img
@@ -946,12 +954,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-17-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-17-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-17.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-17-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-17-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-17-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-17-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-17-2560.avif 2560w
             "
           />
           <img
@@ -963,12 +972,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-18-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-18-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-18.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-18-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-18-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-18-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-18-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-18-2560.avif 2560w
             "
           />
           <img
@@ -980,12 +990,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-19-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-19-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-19.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-19-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-19-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-19-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-19-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-19-2560.avif 2560w
             "
           />
           <img
@@ -997,12 +1008,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-20-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-20-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-20.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-20-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-20-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-20-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-20-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-20-2560.avif 2560w
             "
           />
           <img
@@ -1014,12 +1026,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-23-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-23-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-23.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-23-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-23-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-23-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-23-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-23-2560.avif 2560w
             "
           />
           <img
@@ -1031,12 +1044,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-26-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-26-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-26.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-26-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-26-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-26-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-26-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-26-2560.avif 2560w
             "
           />
           <img
@@ -1048,12 +1062,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-27-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-27-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-27.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-27-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-27-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-27-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-27-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-27-2560.avif 2560w
             "
           />
           <img
@@ -1065,12 +1080,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-28-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-28-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-28.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-28-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-28-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-28-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-28-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-28-2560.avif 2560w
             "
           />
           <img
@@ -1082,12 +1098,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-30-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-30-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-30.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-30-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-30-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-30-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-30-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-30-2560.avif 2560w
             "
           />
           <img
@@ -1099,12 +1116,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-31-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-31-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-31.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-31-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-31-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-31-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-31-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-31-2560.avif 2560w
             "
           />
           <img
@@ -1116,12 +1134,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-32-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-32-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-32.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-32-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-32-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-32-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-32-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-32-2560.avif 2560w
             "
           />
           <img
@@ -1133,12 +1152,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-33-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-33-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-33.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-33-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-33-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-33-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-33-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-33-2560.avif 2560w
             "
           />
           <img
@@ -1150,12 +1170,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-35-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-35-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-35.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-35-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-35-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-35-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-35-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-35-2560.avif 2560w
             "
           />
           <img
@@ -1167,12 +1188,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-36-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-36-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-36.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-36-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-36-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-36-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-36-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-36-2560.avif 2560w
             "
           />
           <img
@@ -1184,12 +1206,13 @@
               https://img.reiseblog-hollmann.de/sunshine/Bild-37-400.avif 400w,
               https://img.reiseblog-hollmann.de/sunshine/Bild-37-600.avif 600w
             "
-            sizes="(min-width: 1000px) 190px, (min-width: 600px) 30vw, 45vw"
-            data-full="https://img.reiseblog-hollmann.de/sunshine/Bild-37.jpg"
-            onerror="
-              this.onerror = null;
-              this.srcset = '';
-              this.src = this.dataset.full;
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/sunshine/Bild-37-800.avif 800w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-37-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-37-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-37-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/sunshine/Bild-37-2560.avif 2560w
             "
           />
         </div>
