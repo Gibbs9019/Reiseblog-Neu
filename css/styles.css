@@ -235,11 +235,13 @@
   content: "";
   position: absolute;
   inset: 0;
-  /*background: linear-gradient(
+  /* dezenter Mint-Verlauf (--azure-mist) hinter dem Seitentitel */
+  background: linear-gradient(
     to bottom,
-    rgba(206, 223, 217, 0.85) 0%,
-    rgba(206, 223, 217, 0) 55%
-  );*/
+    rgb(206 223 217 / 0.55) 0%,
+    rgb(206 223 217 / 0.25) 25%,
+    rgb(206 223 217 / 0) 50%
+  );
   pointer-events: none;
 }
 
