@@ -1,0 +1,1088 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link für font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Catlins</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html">
+        <svg
+          class="site-logo"
+          viewBox="0 0 400 400"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          aria-label="Reiseblog – Häschen, Bär und Globus"
+        >
+          <defs>
+            <clipPath id="logoGlobeClip">
+              <circle cx="200" cy="255" r="112" />
+            </clipPath>
+          </defs>
+
+          <!-- Badge -->
+          <circle cx="200" cy="200" r="188" class="badge" />
+          <circle
+            cx="200"
+            cy="200"
+            r="188"
+            fill="none"
+            class="stroke"
+            stroke-width="7"
+          />
+          <circle
+            cx="200"
+            cy="200"
+            r="176"
+            fill="none"
+            class="ring"
+            stroke-width="2"
+            opacity="0.45"
+          />
+
+          <!-- Arme -->
+          <path
+            d="M150 176 Q120 196 150 214"
+            fill="none"
+            class="stroke"
+            stroke-width="20"
+            stroke-linecap="round"
+          />
+          <path
+            d="M150 176 Q120 196 150 214"
+            fill="none"
+            class="bunny-s"
+            stroke-width="13"
+            stroke-linecap="round"
+          />
+          <path
+            d="M252 178 Q282 198 252 216"
+            fill="none"
+            class="stroke"
+            stroke-width="22"
+            stroke-linecap="round"
+          />
+          <path
+            d="M252 178 Q282 198 252 216"
+            fill="none"
+            class="bear-s"
+            stroke-width="15"
+            stroke-linecap="round"
+          />
+
+          <!-- Globus -->
+          <circle cx="200" cy="255" r="112" class="ocean" />
+          <g clip-path="url(#logoGlobeClip)">
+            <path
+              d="M118 215 q34 -20 64 -2 q24 16 4 42 q-22 24 -54 12 q-30 -14 -14 -52 z"
+              class="land"
+            />
+            <path
+              d="M214 300 q42 -14 68 12 q18 22 -12 42 q-42 26 -76 -4 q-20 -30 20 -50 z"
+              class="land"
+            />
+            <path
+              d="M252 205 q24 -4 30 16 q6 22 -20 26 q-22 2 -26 -18 q-2 -20 16 -24 z"
+              class="land"
+            />
+            <ellipse
+              cx="200"
+              cy="255"
+              rx="44"
+              ry="112"
+              fill="none"
+              class="grid"
+              stroke-width="2.5"
+              opacity="0.55"
+            />
+            <line
+              x1="88"
+              y1="255"
+              x2="312"
+              y2="255"
+              class="grid"
+              stroke-width="2.5"
+              opacity="0.55"
+            />
+            <path
+              d="M94 210 q106 30 212 0"
+              fill="none"
+              class="grid"
+              stroke-width="2"
+              opacity="0.4"
+            />
+            <path
+              d="M94 300 q106 30 212 0"
+              fill="none"
+              class="grid"
+              stroke-width="2"
+              opacity="0.4"
+            />
+          </g>
+          <circle
+            cx="200"
+            cy="255"
+            r="112"
+            fill="none"
+            class="stroke"
+            stroke-width="5.5"
+          />
+
+          <!-- Pfoten -->
+          <circle
+            cx="150"
+            cy="214"
+            r="14"
+            class="bunny stroke"
+            stroke-width="4.5"
+          />
+          <circle
+            cx="252"
+            cy="216"
+            r="15"
+            class="bear stroke"
+            stroke-width="4.5"
+          />
+
+          <!-- Häschen -->
+          <g transform="rotate(6 168 140)">
+            <ellipse
+              cx="150"
+              cy="66"
+              rx="14"
+              ry="50"
+              transform="rotate(-12 150 66)"
+              class="bunny stroke"
+              stroke-width="5"
+            />
+            <ellipse
+              cx="186"
+              cy="60"
+              rx="14"
+              ry="52"
+              transform="rotate(7 186 60)"
+              class="bunny stroke"
+              stroke-width="5"
+            />
+            <ellipse
+              cx="150"
+              cy="68"
+              rx="6.5"
+              ry="36"
+              transform="rotate(-12 150 68)"
+              class="accent"
+              opacity="0.55"
+            />
+            <ellipse
+              cx="186"
+              cy="62"
+              rx="6.5"
+              ry="38"
+              transform="rotate(7 186 62)"
+              class="accent"
+              opacity="0.55"
+            />
+            <circle
+              cx="168"
+              cy="140"
+              r="48"
+              class="bunny stroke"
+              stroke-width="5"
+            />
+            <circle cx="145" cy="152" r="8.5" class="accent" opacity="0.45" />
+            <circle cx="191" cy="152" r="8.5" class="accent" opacity="0.45" />
+            <circle cx="153" cy="136" r="6" class="ink" />
+            <circle cx="183" cy="136" r="6" class="ink" />
+            <path d="M168 148 l7 6 h-14 z" class="accent" />
+            <path
+              d="M168 154 v6 M168 160 q-6 5 -12 2 M168 160 q6 5 12 2"
+              fill="none"
+              class="stroke"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+          </g>
+
+          <!-- Bär -->
+          <g transform="rotate(-6 234 144)">
+            <circle
+              cx="208"
+              cy="106"
+              r="20"
+              class="bear stroke"
+              stroke-width="5"
+            />
+            <circle
+              cx="262"
+              cy="106"
+              r="20"
+              class="bear stroke"
+              stroke-width="5"
+            />
+            <circle cx="208" cy="106" r="9.5" class="bear-lt" />
+            <circle cx="262" cy="106" r="9.5" class="bear-lt" />
+            <circle
+              cx="235"
+              cy="146"
+              r="52"
+              class="bear stroke"
+              stroke-width="5"
+            />
+            <ellipse cx="235" cy="164" rx="29" ry="23" class="bear-lt" />
+            <circle cx="210" cy="156" r="8.5" class="ink" opacity="0.18" />
+            <circle cx="260" cy="156" r="8.5" class="ink" opacity="0.18" />
+            <circle cx="220" cy="140" r="6" class="ink" />
+            <circle cx="250" cy="140" r="6" class="ink" />
+            <ellipse cx="235" cy="156" rx="8.5" ry="6.5" class="ink" />
+            <path
+              d="M235 162 v6 M235 168 q-7 6 -13 1 M235 168 q7 6 13 1"
+              fill="none"
+              class="stroke"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+          </g>
+        </svg>
+      </a>
+      <span class="site-title">Reiseblog</span>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="index.html">Start</a></li>
+          <li>
+            <a class="main-nav-link" href="catlins.html">Aktueller Post</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="index.html#neuseeland">Neuseeland</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="index.html#australien">Australien</a>
+          </li>
+          <li><a class="main-nav-link" href="#">Über uns</a></li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
+          fill="#000000"
+          viewBox="0 0 256 256"
+          class="icon-mobile-nav"
+          name="menu"
+        >
+          <path
+            d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+          ></path>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
+          fill="#000000"
+          viewBox="0 0 256 256"
+          class="icon-mobile-nav"
+          name="close"
+        >
+          <path
+            d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+          ></path>
+        </svg>
+      </button>
+    </header>
+    <main>
+      <section class="section-post-hero">
+        <div class="post-hero">
+          <div class="post-hero-img-container">
+            <!--  -->
+            <img
+              src="https://img.reiseblog-hollmann.de/catlins/Bild-1-2400.avif"
+              srcset="
+                https://img.reiseblog-hollmann.de/catlins/Bild-1-400.avif   400w,
+                https://img.reiseblog-hollmann.de/catlins/Bild-1-800.avif   800w,
+                https://img.reiseblog-hollmann.de/catlins/Bild-1-1200.avif 1200w,
+                https://img.reiseblog-hollmann.de/catlins/Bild-1-1800.avif 1800w
+              "
+              sizes="100vw"
+              class="hero-img"
+              loading="eager"
+              decoding="async"
+              width="4000"
+              height="3000"
+              alt="Blick von oben auf die Felsklippen am Nugget Point in den Catlins, grüne Landzunge und zahlreiche zerklüftete Felsen im türkisblauen Meer unter bewölktem Himmel"
+            />
+            <!--  -->
+          </div>
+          <div class="post-hero-text-box flow">
+            <h1 class="blog-heading">Catlins</h1>
+            <!-- <p class="blog-sub">Untertitel</p> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Weather -->
+
+      <section class="section section-weather">
+        <div class="container weather">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#000000"
+            viewBox="0 0 256 256"
+            class="weather-icon"
+          >
+            <path
+              d="M158.66,196.44l-32,48a8,8,0,1,1-13.32-8.88l32-48a8,8,0,0,1,13.32,8.88ZM232,92a76.08,76.08,0,0,1-76,76H132.28l-29.62,44.44a8,8,0,1,1-13.32-8.88L113.05,168H76A52,52,0,0,1,76,64a53.26,53.26,0,0,1,8.92.76A76.08,76.08,0,0,1,232,92Zm-16,0A60.06,60.06,0,0,0,96,88.46a8,8,0,0,1-16-.92q.21-3.66.77-7.23A38.11,38.11,0,0,0,76,80a36,36,0,0,0,0,72h80A60.07,60.07,0,0,0,216,92Z"
+            ></path>
+          </svg>
+          <span class="temp">15°C</span>
+        </div>
+      </section>
+
+      <section class="section text-only">
+        <div class="container grid grid--max2-cols">
+          <div class="paragraph flow">
+            <!-- <h2 class="heading-paragraph">Ready for Takeoff</h2> -->
+            <p class="text">
+              Die Catlins liegen im südöstlichsten Teil der Südinsel und sind
+              sehr dünn besiedelt, mit ca. 1200 Einwohnern. Nieselregen ist hier
+              typisch und tritt an bis zu 200 Tagen im Jahr.
+            </p>
+          </div>
+          <p class="text">
+            Zunächst zeigte sich das Wetter noch von seiner guten Seite und wir
+            konnten das Nugget Point Lighthouse trockenen Fußes besichtigen.
+          </p>
+        </div>
+      </section>
+
+      <section class="section text-landscape">
+        <div class="container grid grid--max2-cols">
+          <div class="card-container">
+            <div class="img-box">
+              <img
+                src="https://img.reiseblog-hollmann.de/catlins/Bild-2-2400.avif"
+                srcset="
+                  https://img.reiseblog-hollmann.de/catlins/Bild-2-400.avif   400w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-2-800.avif   800w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-2-1200.avif 1200w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-2-1800.avif 1800w
+                "
+                sizes="(min-width: 1200px) 500px,(min-width: 661px) calc(50vw - 95px), calc(100vw - 90px)"
+                loading="lazy"
+                decoding="async"
+                width="3000"
+                height="4000"
+                alt="Steile, grün bewachsene Klippe am Nugget Point mit geschwungener Bucht, Felsen im türkisblauen Meer und weißer Brandung"
+              />
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="img-box">
+              <img
+                src="https://img.reiseblog-hollmann.de/catlins/Bild-5-2400.avif"
+                srcset="
+                  https://img.reiseblog-hollmann.de/catlins/Bild-5-400.avif   400w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-5-800.avif   800w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-5-1200.avif 1200w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-5-1800.avif 1800w
+                "
+                sizes="(min-width: 1200px) 500px,(min-width: 661px) calc(50vw - 95px), calc(100vw - 90px)"
+                loading="lazy"
+                decoding="async"
+                width="3000"
+                height="4000"
+                alt="Frau in blauem T-Shirt auf dem Schotterweg zum weißen Leuchtturm auf dem schmalen Felsgrat des Nugget Point"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section img-only">
+        <div class="container">
+          <div class="img-only-box">
+            <img
+              src="https://img.reiseblog-hollmann.de/catlins/Bild-6-2400.avif"
+              srcset="
+                https://img.reiseblog-hollmann.de/catlins/Bild-6-400.avif   400w,
+                https://img.reiseblog-hollmann.de/catlins/Bild-6-800.avif   800w,
+                https://img.reiseblog-hollmann.de/catlins/Bild-6-1200.avif 1200w,
+                https://img.reiseblog-hollmann.de/catlins/Bild-6-1800.avif 1800w
+              "
+              sizes="(min-width: 1200px) 1200px, calc(100vw-40px)"
+              loading="lazy"
+              decoding="async"
+              width="4000"
+              height="3000"
+              alt="Blick durch grünes Buschwerk auf den weißen Leuchtturm am Nugget Point über dem blauen Meer"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section text-only">
+        <div class="container grid grid--max2-cols">
+          <div class="paragraph flow">
+            <!-- <h2 class="heading-paragraph">Ready for Takeoff</h2> -->
+            <p class="text">
+              Unser Campingplatz liegt in Newhaven direkt an der Surat Bay und
+              ist auch Heimat von Seelöwen.
+            </p>
+          </div>
+          <p class="text">
+            Bei Ebbe ideal für ausgedehnte Strandspaziergänge und eine
+            Abkühlung, auf die wir diesmal aber verzichteten.
+          </p>
+        </div>
+      </section>
+
+      <section class="section text-landscape">
+        <div class="container grid grid--max2-cols">
+          <div class="card-container">
+            <div class="img-box">
+              <img
+                src="https://img.reiseblog-hollmann.de/catlins/Bild-7-2400.avif"
+                srcset="
+                  https://img.reiseblog-hollmann.de/catlins/Bild-7-400.avif   400w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-7-800.avif   800w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-7-1200.avif 1200w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-7-1800.avif 1800w
+                "
+                sizes="(min-width: 1200px) 500px,(min-width: 661px) calc(50vw - 95px), calc(100vw - 90px)"
+                loading="lazy"
+                decoding="async"
+                width="3000"
+                height="4000"
+                alt="Frau in blauem T-Shirt steht barfuß im klaren, flachen Wasser eines weiten Sandstrands in den Catlins unter tiefblauem Himmel"
+              />
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="img-box">
+              <img
+                src="https://img.reiseblog-hollmann.de/catlins/Bild-8-2400.avif"
+                srcset="
+                  https://img.reiseblog-hollmann.de/catlins/Bild-8-400.avif   400w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-8-800.avif   800w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-8-1200.avif 1200w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-8-1800.avif 1800w
+                "
+                sizes="(min-width: 1200px) 500px,(min-width: 661px) calc(50vw - 95px), calc(100vw - 90px)"
+                loading="lazy"
+                decoding="async"
+                width="3000"
+                height="4000"
+                alt="Schatten zweier Personen auf dem nassen, goldenen Sandstrand, dahinter Meer und Dünen der Catlins"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section img-only">
+        <div class="container">
+          <div class="img-only-box">
+            <img
+              src="https://img.reiseblog-hollmann.de/catlins/Bild-19-2400.avif"
+              srcset="
+                https://img.reiseblog-hollmann.de/catlins/Bild-19-400.avif   400w,
+                https://img.reiseblog-hollmann.de/catlins/Bild-19-800.avif   800w,
+                https://img.reiseblog-hollmann.de/catlins/Bild-19-1200.avif 1200w,
+                https://img.reiseblog-hollmann.de/catlins/Bild-19-1800.avif 1800w
+              "
+              sizes="(min-width: 1200px) 1200px, calc(100vw-40px)"
+              loading="lazy"
+              decoding="async"
+              width="4000"
+              height="3000"
+              alt="Seelöwe liegt entspannt mit geschlossenen Augen im Sand vor Dünengras in den Catlins"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section text-only">
+        <div class="container grid grid--max2-cols">
+          <div class="paragraph flow">
+            <!-- <h2 class="heading-paragraph">Ready for Takeoff</h2> -->
+            <p class="text">
+              Der nächste Tag brachte nicht nur Nieselregen, sondern
+              zwischendurch auch kräftige Schauer. Immerhin besteht dann
+              ausnahmsweise mal keine Sonnenbrandgefahr.
+            </p>
+          </div>
+          <p class="text">
+            Wir ließen uns trotzdem nicht von unserer Wasserfalltour abbringen
+            und wurden, nach 3 kurzen Spaziergängen im Regenwald, mit einer
+            Aussicht belohnt.
+          </p>
+        </div>
+      </section>
+
+      <section class="section text-landscape">
+        <div class="container grid grid--max2-cols">
+          <div class="card-container">
+            <div class="img-box">
+              <img
+                src="https://img.reiseblog-hollmann.de/catlins/Bild-12-2400.avif"
+                srcset="
+                  https://img.reiseblog-hollmann.de/catlins/Bild-12-400.avif   400w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-12-800.avif   800w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-12-1200.avif 1200w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-12-1800.avif 1800w
+                "
+                sizes="(min-width: 1200px) 500px,(min-width: 661px) calc(50vw - 95px), calc(100vw - 90px)"
+                loading="lazy"
+                decoding="async"
+                width="3000"
+                height="4000"
+                alt="Mehrstufiger Purakaunui-Wasserfall im dichten grünen Regenwald, im Vordergrund ein bemooster Felsen im Bach"
+              />
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="img-box">
+              <img
+                src="https://img.reiseblog-hollmann.de/catlins/Bild-18-2400.avif"
+                srcset="
+                  https://img.reiseblog-hollmann.de/catlins/Bild-18-400.avif   400w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-18-800.avif   800w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-18-1200.avif 1200w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-18-1800.avif 1800w
+                "
+                sizes="(min-width: 1200px) 500px,(min-width: 661px) calc(50vw - 95px), calc(100vw - 90px)"
+                loading="lazy"
+                decoding="async"
+                width="3000"
+                height="4000"
+                alt="Selfie zweier lächelnder Personen in Regenjacken vor den McLean Falls im grünen Regenwald"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section img-only">
+        <div class="container">
+          <div class="img-only-box">
+            <img
+              src="https://img.reiseblog-hollmann.de/catlins/Bild-16-2400.avif"
+              srcset="
+                https://img.reiseblog-hollmann.de/catlins/Bild-16-400.avif   400w,
+                https://img.reiseblog-hollmann.de/catlins/Bild-16-800.avif   800w,
+                https://img.reiseblog-hollmann.de/catlins/Bild-16-1200.avif 1200w,
+                https://img.reiseblog-hollmann.de/catlins/Bild-16-1800.avif 1800w
+              "
+              sizes="(min-width: 1200px) 1200px, calc(100vw-40px)"
+              loading="lazy"
+              decoding="async"
+              width="4000"
+              height="3000"
+              alt="Kaskaden der McLean Falls über flache, bemooste Felsstufen, im Hintergrund der hohe Hauptfall im Regenwald"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section text-only">
+        <div class="container grid grid--max2-cols">
+          <div class="paragraph flow">
+            <!-- <h2 class="heading-paragraph">Ready for Takeoff</h2> -->
+            <p class="text">
+              Der nächste Tag sollte noch feuchter werden, kaum zu glauben. Den
+              Abstecher zum südlichsten Punkt der Südinsel blockierten erst mal
+              nur die Schafe.
+            </p>
+          </div>
+          <p class="text">
+            Am südlichsten Punkt angekommen fühlten wir uns dem Südpol
+            tatsächlich näher als dem Äquator. Aufwärmung verspricht eine gute
+            Tassee Kaffee im lokalen kleinen Café.
+          </p>
+        </div>
+      </section>
+
+      <section class="section text-landscape">
+        <div class="container grid grid--max2-cols">
+          <div class="card-container">
+            <div class="img-box">
+              <img
+                src="https://img.reiseblog-hollmann.de/catlins/Bild-26-2400.avif"
+                srcset="
+                  https://img.reiseblog-hollmann.de/catlins/Bild-26-400.avif   400w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-26-800.avif   800w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-26-1200.avif 1200w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-26-1800.avif 1800w
+                "
+                sizes="(min-width: 1200px) 500px,(min-width: 661px) calc(50vw - 95px), calc(100vw - 90px)"
+                loading="lazy"
+                decoding="async"
+                width="3000"
+                height="4000"
+                alt="Person in Regenjacke breitet die Arme hinter dem gelben Wegweiser am Slope Point aus, dem südlichsten Punkt der Südinsel, mit Entfernungsangaben zum Äquator und Südpol"
+              />
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="img-box">
+              <img
+                src="https://img.reiseblog-hollmann.de/catlins/Bild-29-2400.avif"
+                srcset="
+                  https://img.reiseblog-hollmann.de/catlins/Bild-29-400.avif   400w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-29-800.avif   800w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-29-1200.avif 1200w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-29-1800.avif 1800w
+                "
+                sizes="(min-width: 1200px) 500px,(min-width: 661px) calc(50vw - 95px), calc(100vw - 90px)"
+                loading="lazy"
+                decoding="async"
+                width="3000"
+                height="4000"
+                alt="Große Schafherde blockiert eine schmale Landstraße in den Catlins, dazwischen wartende Autos unter grauem Himmel"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section img-only">
+        <div class="container">
+          <div class="img-only-box">
+            <img
+              src="https://img.reiseblog-hollmann.de/catlins/Bild-23-2400.avif"
+              srcset="
+                https://img.reiseblog-hollmann.de/catlins/Bild-23-400.avif   400w,
+                https://img.reiseblog-hollmann.de/catlins/Bild-23-800.avif   800w,
+                https://img.reiseblog-hollmann.de/catlins/Bild-23-1200.avif 1200w,
+                https://img.reiseblog-hollmann.de/catlins/Bild-23-1800.avif 1800w
+              "
+              sizes="(min-width: 1200px) 1200px, calc(100vw-40px)"
+              loading="lazy"
+              decoding="async"
+              width="4000"
+              height="3000"
+              alt="Felsige Küstenplattform mit Steinen und Wasserpfützen in der Curio Bay unter bewölktem Himmel"
+            />
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <p class="text descr-weiter">
+          Wir versuchen euch regelmäßig auf dem Laufenden zu halten. Aber seid
+          uns bitte nicht böse, wenn hier nur alle paar Tage ein neues Update
+          erscheint.
+        </p>
+      </div>
+      <section class="section section-gallery">
+        <div class="container clickme-container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            fill="#000000"
+            viewBox="0 0 256 256"
+            class="arrowdown"
+          >
+            <path
+              d="M208,32a8,8,0,0,1-8,8,88.1,88.1,0,0,0-88,88v76.69l34.34-34.35a8,8,0,0,1,11.32,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L96,204.69V128A104.11,104.11,0,0,1,200,24,8,8,0,0,1,208,32Z"
+            ></path>
+          </svg>
+          <p class="clickme">Click me</p>
+        </div>
+        <!--
+    Jede Kachel hat:
+    - src      : Fallback für alte Browser
+    - srcset   : mehrere Auflösungen mit ihrer echten Pixelbreite (…w)
+    - sizes    : wie breit die Kachel im Layout TATSÄCHLICH dargestellt wird
+    - data-srcset: Varianten für die Lightbox (script.js wählt die passende Breite)
+  -->
+        <div class="gallery" id="gallery">
+          <img
+            alt="Bild 1"
+            loading="lazy"
+            src="https://img.reiseblog-hollmann.de/catlins/Bild-3-400.avif"
+            srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-3-200.avif 200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-3-400.avif 400w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-3-600.avif 600w
+            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-3-800.avif 800w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-3-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-3-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-3-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-3-2560.avif 2560w
+            "
+          />
+          <img
+            alt="Bild 2"
+            loading="lazy"
+            src="https://img.reiseblog-hollmann.de/catlins/Bild-4-400.avif"
+            srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-4-200.avif 200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-4-400.avif 400w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-4-600.avif 600w
+            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-4-800.avif 800w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-4-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-4-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-4-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-4-2560.avif 2560w
+            "
+          />
+          <img
+            alt="Bild 3"
+            loading="lazy"
+            src="https://img.reiseblog-hollmann.de/catlins/Bild-9-400.avif"
+            srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-9-200.avif 200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-9-400.avif 400w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-9-600.avif 600w
+            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-9-800.avif 800w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-9-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-9-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-9-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-9-2560.avif 2560w
+            "
+          />
+          <img
+            alt="Bild 4"
+            loading="lazy"
+            src="https://img.reiseblog-hollmann.de/catlins/Bild-10-400.avif"
+            srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-10-200.avif 200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-10-400.avif 400w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-10-600.avif 600w
+            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-10-800.avif 800w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-10-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-10-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-10-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-10-2560.avif 2560w
+            "
+          />
+          <img
+            alt="Bild 5"
+            loading="lazy"
+            src="https://img.reiseblog-hollmann.de/catlins/Bild-11-400.avif"
+            srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-11-200.avif 200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-11-400.avif 400w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-11-600.avif 600w
+            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-11-800.avif 800w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-11-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-11-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-11-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-11-2560.avif 2560w
+            "
+          />
+          <img
+            alt="Bild 6"
+            loading="lazy"
+            src="https://img.reiseblog-hollmann.de/catlins/Bild-13-400.avif"
+            srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-13-200.avif 200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-13-400.avif 400w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-13-600.avif 600w
+            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-13-800.avif 800w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-13-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-13-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-13-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-13-2560.avif 2560w
+            "
+          />
+          <img
+            alt="Bild 7"
+            loading="lazy"
+            src="https://img.reiseblog-hollmann.de/catlins/Bild-14-400.avif"
+            srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-14-200.avif 200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-14-400.avif 400w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-14-600.avif 600w
+            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-14-800.avif 800w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-14-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-14-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-14-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-14-2560.avif 2560w
+            "
+          />
+          <img
+            alt="Bild 8"
+            loading="lazy"
+            src="https://img.reiseblog-hollmann.de/catlins/Bild-15-400.avif"
+            srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-15-200.avif 200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-15-400.avif 400w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-15-600.avif 600w
+            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-15-800.avif 800w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-15-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-15-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-15-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-15-2560.avif 2560w
+            "
+          />
+          <img
+            alt="Bild 9"
+            loading="lazy"
+            src="https://img.reiseblog-hollmann.de/catlins/Bild-17-400.avif"
+            srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-17-200.avif 200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-17-400.avif 400w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-17-600.avif 600w
+            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-17-800.avif 800w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-17-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-17-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-17-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-17-2560.avif 2560w
+            "
+          />
+          <img
+            alt="Bild 10"
+            loading="lazy"
+            src="https://img.reiseblog-hollmann.de/catlins/Bild-20-400.avif"
+            srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-20-200.avif 200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-20-400.avif 400w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-20-600.avif 600w
+            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-20-800.avif 800w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-20-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-20-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-20-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-20-2560.avif 2560w
+            "
+          />
+          <img
+            alt="Bild 11"
+            loading="lazy"
+            src="https://img.reiseblog-hollmann.de/catlins/Bild-21-400.avif"
+            srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-21-200.avif 200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-21-400.avif 400w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-21-600.avif 600w
+            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-21-800.avif 800w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-21-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-21-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-21-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-21-2560.avif 2560w
+            "
+          />
+          <img
+            alt="Bild 12"
+            loading="lazy"
+            src="https://img.reiseblog-hollmann.de/catlins/Bild-22-400.avif"
+            srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-22-200.avif 200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-22-400.avif 400w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-22-600.avif 600w
+            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-22-800.avif 800w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-22-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-22-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-22-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-22-2560.avif 2560w
+            "
+          />
+          <img
+            alt="Bild 13"
+            loading="lazy"
+            src="https://img.reiseblog-hollmann.de/catlins/Bild-24-400.avif"
+            srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-24-200.avif 200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-24-400.avif 400w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-24-600.avif 600w
+            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-24-800.avif 800w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-24-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-24-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-24-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-24-2560.avif 2560w
+            "
+          />
+          <img
+            alt="Bild 14"
+            loading="lazy"
+            src="https://img.reiseblog-hollmann.de/catlins/Bild-25-400.avif"
+            srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-25-200.avif 200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-25-400.avif 400w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-25-600.avif 600w
+            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-25-800.avif 800w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-25-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-25-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-25-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-25-2560.avif 2560w
+            "
+          />
+          <img
+            alt="Bild 15"
+            loading="lazy"
+            src="https://img.reiseblog-hollmann.de/catlins/Bild-27-400.avif"
+            srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-27-200.avif 200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-27-400.avif 400w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-27-600.avif 600w
+            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-27-800.avif 800w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-27-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-27-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-27-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-27-2560.avif 2560w
+            "
+          />
+          <img
+            alt="Bild 16"
+            loading="lazy"
+            src="https://img.reiseblog-hollmann.de/catlins/Bild-28-400.avif"
+            srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-28-200.avif 200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-28-400.avif 400w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-28-600.avif 600w
+            "
+            sizes="(max-width: 319px) 100vw, (max-width: 479px) 50vw, (max-width: 639px) 34vw, (max-width: 799px) 25vw, (max-width: 959px) 20vw, (max-width: 999px) 17vw, 167px"
+            data-srcset="
+              https://img.reiseblog-hollmann.de/catlins/Bild-28-800.avif 800w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-28-1200.avif 1200w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-28-1600.avif 1600w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-28-2048.avif 2048w,
+              https://img.reiseblog-hollmann.de/catlins/Bild-28-2560.avif 2560w
+            "
+          />
+        </div>
+
+        <!-- Die Lightbox -->
+        <div
+          class="lightbox"
+          id="lightbox"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Bildansicht"
+        >
+          <button class="lb-btn lb-close" id="lbClose" aria-label="Schließen">
+            &times;
+          </button>
+          <button
+            class="lb-btn lb-prev"
+            id="lbPrev"
+            aria-label="Vorheriges Bild"
+          >
+            &#8249;
+          </button>
+          <img id="lbImage" src="" alt="" />
+          <button class="lb-btn lb-next" id="lbNext" aria-label="Nächstes Bild">
+            &#8250;
+          </button>
+          <div class="lb-counter" id="lbCounter"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="section footer">
+      <div class="container grid grid--footer">
+        <div class="footer-copy">
+          <p class="copy">Copyright &copy; 2026</p>
+          <ul class="social-links">
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.instagram.com/mr_holliday90/"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                  ></path></svg
+                ><span>C</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.instagram.com/ulli.rikee/"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                  ></path></svg
+                ><span>U</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Über uns</a>
+            </li>
+            <li>
+              <a class="footer-link" href="mailto:chroll@hotmail.de"
+                >Fragen und Anregungen</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -262,7 +262,7 @@
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="index.html">Start</a></li>
           <li>
-            <a class="main-nav-link" href="dunedin.html">Aktueller Post</a>
+            <a class="main-nav-link" href="catlins.html">Aktueller Post</a>
           </li>
           <li><a class="main-nav-link" href="index.html#neuseeland">Neuseeland</a></li>
           <li><a class="main-nav-link" href="index.html#australien">Australien</a></li>
@@ -334,14 +334,6 @@
                 width="4000"
                 height="3000"
                 alt="Koala Hero"
-                onerror="
-                  this.onerror = null;
-                  this.closest('picture')
-                    .querySelectorAll('source')
-                    .forEach((s) => s.remove());
-                  this.srcset = '';
-                  this.src = 'https://img.reiseblog-hollmann.de/hero-ls.jpg';
-                "
               />
             </picture>
             <!--  -->
@@ -388,11 +380,6 @@
               width="1800"
               height="1800"
               alt="Karte mit Markierung auf Newhaven, Neuseeland"
-              onerror="
-                this.onerror = null;
-                this.srcset = '';
-                this.src = 'https://img.reiseblog-hollmann.de/maps/newhaven.jpg';
-              "
             />
           </div>
           <!-- <div class="current-weather">
@@ -438,6 +425,29 @@
           </div>
         </div>
         <div class="container grid grid--max3-cols">
+          <a href="catlins.html" class="card" data-land="neuseeland">
+            <div class="card-img-container">
+              <img
+                src="https://img.reiseblog-hollmann.de/catlins/Bild-20-5095.avif"
+                srcset="
+                  https://img.reiseblog-hollmann.de/catlins/Bild-20-400.avif   400w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-20-800.avif   800w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-20-1200.avif 1200w,
+                  https://img.reiseblog-hollmann.de/catlins/Bild-20-1600.avif 1600w
+                "
+                sizes="(min-width: 1200px) 365px, (min-width: 934px) calc(33.33dvw - 100px) ,(min-width: 621px) calc(50dvw - 66px), calc(100dvw - 34px)"
+                class="card-img"
+                loading="lazy"
+                decoding="async"
+                width="4000"
+                height="3000"
+                alt="Seelöwe steigt in den Catlins aus der flachen Brandung an den Strand, im Profil mit erhobenem Kopf vor grauem Meer"
+              />
+            </div>
+            <div class="description-container">
+              <p class="card-description">Catlins</p>
+            </div>
+          </a>
           <a href="dunedin.html" class="card" data-land="neuseeland">
             <div class="card-img-container">
               <img
@@ -455,12 +465,6 @@
                 width="4000"
                 height="3000"
                 alt="Sandiger Pfad durch grüne Dünen mit gelb und lila blühenden Lupinen hinunter zur Sandfly Bay bei Dunedin, im türkisblauen Meer mit weißer Brandung ragt ein Felsen auf"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/dunedin/Bild-9.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -484,12 +488,6 @@
                 width="4000"
                 height="3000"
                 alt="Zwergpinguin mit blaugrauem Gefieder und weißem Bauch sitzt zwischen Felsen an der Küste von Timaru, im Hintergrund dunkles Wasser"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/timaru/Bild-23.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -513,12 +511,6 @@
                 width="4000"
                 height="3000"
                 alt="Glatter, blauer Lake Tekapo im Abendlicht, links ein dunkler Nadelwald am Ufer, dahinter sonnenbeschienene Berghänge und Gipfel unter hoch aufgetürmten, golden leuchtenden Wolken"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/tekapo/Bild-28.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -542,12 +534,6 @@
                 width="4000"
                 height="3000"
                 alt="Milchig-grüner Hooker Lake mit treibendem Eisberg, dahinter der schneebedeckte Mount Cook zwischen steilen Bergflanken unter tiefblauem Himmel, im Vordergrund Steine am Ufer"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/mountcook/Bild-12.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -571,12 +557,6 @@
                 width="4000"
                 height="3000"
                 alt="Einzelner Baum steht im spiegelglatten Lake Wanaka in rosa Abendlicht, dahinter Berge mit Schneegipfeln, im Vordergrund gelbe Lupinen am Kiesstrand"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/wanaka/Bild-34.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -600,12 +580,6 @@
                 width="4000"
                 height="3000"
                 alt="Blau schimmernde Gletscherzunge des Franz-Josef-Gletschers zwischen einem grün bewaldeten Berghang und grauen Felswänden, darüber verschneite Gipfel"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/franz/Bild-27.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -629,12 +603,6 @@
                 width="4000"
                 height="3000"
                 alt="Rosa-violetter Abendhimmel über einer Bergkette und der stillen Bucht von Akaroa, im Vordergrund dunkelgrüne Bäume und Büsche"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/arthur/Bild-10.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -658,12 +626,6 @@
                 width="4000"
                 height="3000"
                 alt="Nahaufnahme einer voll erblühten gelben Rose vor dunkelgrünen, glänzenden Blättern"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/christchurch/Bild-10.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -687,12 +649,6 @@
                 width="4000"
                 height="3000"
                 alt="Neuseeländischer Seebär mit glänzend nassem Fell und langen Schnurrhaaren auf grauen Küstenfelsen"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/kaikoura/Bild-33.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -716,12 +672,6 @@
                 width="4000"
                 height="3000"
                 alt="Nahaufnahme glänzend grüner, rundlicher Blätter an rötlichen Zweigen"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/abeltasman/Bild-41.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -745,12 +695,6 @@
                 width="4000"
                 height="3000"
                 alt="Reihen von Weinreben in der Wairarapa unter dunklen Wolken, durch die Sonnenstrahlen brechen, hinten ein weißes Landhaus"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/martinpoint/Bild-4.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -774,12 +718,6 @@
                 width="4000"
                 height="3000"
                 alt="Die türkisfarbenen Emerald Lakes im Vulkangestein des Tongariro Alpine Crossing, dahinter dunkle Bergrücken"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/taupo/Bild-14.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -803,12 +741,6 @@
                 width="4000"
                 height="3000"
                 alt="Fachwerkbau des Rotorua Museums mit roten Dächern und Türmchen, davor bunte Kornblumen und Palmen"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/rotorua/Bild-4.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -832,12 +764,6 @@
                 width="4000"
                 height="3000"
                 alt="Hobbit-Höhle mit gelber runder Tür und Grasdach, davor ein Holzzaun und blühender Garten"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/mittelerde/Bild-5.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -861,12 +787,6 @@
                 width="4000"
                 height="3000"
                 alt="Blick aus einem Felsbogen auf einen Sandstrand und einen freistehenden Felsen im Meer"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/coromandel/Bild-38.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -890,12 +810,6 @@
                 width="4000"
                 height="3000"
                 alt="Herde schwarzer Rinder blockiert eine Landstraße"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/northland/Bild-32.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -919,12 +833,6 @@
                 width="4000"
                 height="3000"
                 alt="Auckland"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/auckland/Bild-41.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -948,12 +856,6 @@
                 width="4000"
                 height="3000"
                 alt="Nelson Falls nach Hobart"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/nelson/Bild-9.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -977,12 +879,6 @@
                 width="4000"
                 height="3000"
                 alt="Cradle Mountain National Park"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cradle/Bild-5.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1006,12 +902,6 @@
                 width="4000"
                 height="3000"
                 alt="St. Helens"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/helens/Bild-14.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1035,12 +925,6 @@
                 width="4000"
                 height="3000"
                 alt="Coles Bay"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cards/coles.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1064,12 +948,6 @@
                 width="4000"
                 height="3000"
                 alt="Hobart"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cards/hobart.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1093,12 +971,6 @@
                 width="4000"
                 height="3000"
                 alt="Sunshine Coast"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cards/sunshine.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1122,12 +994,6 @@
                 width="4000"
                 height="3000"
                 alt="Byron Bay"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cards/rainbow.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1151,12 +1017,6 @@
                 width="4000"
                 height="3000"
                 alt="Sonnenuntergang an den Three Sisters in den Blue Mountains"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cards/bluemountains.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1180,12 +1040,6 @@
                 width="4000"
                 height="3000"
                 alt="Sydney Opera House"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cards/sydney.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1209,12 +1063,6 @@
                 width="4000"
                 height="3000"
                 alt="Panorama am Meer in Kiama"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cards/princesshighway.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1238,12 +1086,6 @@
                 width="4000"
                 height="3000"
                 alt="Skyline von Melbourne mit Queen Victoria Market"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cards/melbourne.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1267,12 +1109,6 @@
                 width="4000"
                 height="3000"
                 alt="12 Apostel"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cards/greatoceanroad.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1296,12 +1132,6 @@
                 width="4000"
                 height="3000"
                 alt="Lake Albert"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cards/lakealbert.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1325,12 +1155,6 @@
                 width="4000"
                 height="3000"
                 alt="Koala"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cards/adelaide.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1354,12 +1178,6 @@
                 width="4000"
                 height="3000"
                 alt="Straße durch die Nullarbor"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cards/nullarbor.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1383,12 +1201,6 @@
                 width="4000"
                 height="3000"
                 alt="Twilight Beach in Esperance"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cards/esperance.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1412,12 +1224,6 @@
                 width="4000"
                 height="3000"
                 alt="Christian auf dem Bald Head Trail"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cards/albany.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1441,12 +1247,6 @@
                 width="4000"
                 height="3000"
                 alt="Elephant Rocks von oben"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cards/denmark.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1470,12 +1270,6 @@
                 width="4000"
                 height="3000"
                 alt="Osprey"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cards/augusta.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1499,12 +1293,6 @@
                 width="4000"
                 height="3000"
                 alt="Margret River Yallingup"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cards/margretriver.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1528,12 +1316,6 @@
                 width="4000"
                 height="3000"
                 alt="Nambung Nationalpark Pinnacles"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cards/nambung.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1557,12 +1339,6 @@
                 width="4000"
                 height="3000"
                 alt="Perth Skyline"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cards/perth.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1586,12 +1362,6 @@
                 width="4000"
                 height="3000"
                 alt="Bucht auf Rottnest Island"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cards/rottnest-15.jpg';
-                "
               />
             </div>
             <div class="description-container">
@@ -1615,12 +1385,6 @@
                 width="4000"
                 height="3000"
                 alt="Marina Bay Sands and ScienceArt Museum"
-                onerror="
-                  this.onerror = null;
-                  this.srcset = '';
-                  this.src =
-                    'https://img.reiseblog-hollmann.de/cards/singapur.jpg';
-                "
               />
             </div>
             <div class="description-container">

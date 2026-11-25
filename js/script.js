@@ -1,3 +1,83 @@
+/* --- Bild-Fallback ---
+   Fehlt eine AVIF-Variante (z.B. Bild-5-800.avif noch nicht auf R2),
+   wird die nächst kleinere Variante desselben Bildes geladen, danach
+   die größeren und ganz zuletzt das Original-JPG. Gilt für alle <img>
+   der Seite (Hero, Sektionen, Kacheln, Karte, Galerie-Vorschau). */
+(() => {
+  const VARIANT = /^(.*)-(\d+)\.avif$/;
+  const state = new WeakMap();
+
+  const srcsetUrls = (value) =>
+    (value || "")
+      .split(",")
+      .map((part) => part.trim().split(/\s+/)[0])
+      .filter(Boolean);
+
+  function buildCandidates(img, failedUrl) {
+    const failed = failedUrl.match(VARIANT);
+    if (!failed) return [];
+    const [, base, failedWidth] = failed;
+
+    // Alle bekannten Varianten: img src/srcset und ggf. <source> im <picture>
+    const urls = [img.getAttribute("src"), ...srcsetUrls(img.getAttribute("srcset"))];
+    const picture = img.closest("picture");
+    if (picture) {
+      picture.querySelectorAll("source").forEach((s) => {
+        urls.push(...srcsetUrls(s.getAttribute("srcset")));
+      });
+    }
+
+    const widths = new Map();
+    urls.forEach((u) => {
+      if (!u) return;
+      const abs = new URL(u, location.href).href;
+      const m = abs.match(VARIANT);
+      if (m && m[1] === base) widths.set(parseInt(m[2], 10), abs);
+    });
+
+    const w = parseInt(failedWidth, 10);
+    const all = [...widths.keys()].filter((x) => x !== w);
+    const smaller = all.filter((x) => x < w).sort((a, b) => b - a);
+    const larger = all.filter((x) => x > w).sort((a, b) => a - b);
+    return [...smaller, ...larger].map((x) => widths.get(x)).concat(base + ".jpg");
+  }
+
+  function handleError(img) {
+    if (img.id === "lbImage") return; // Lightbox hat eigene Logik
+    const failedUrl = img.currentSrc || img.src;
+    if (!failedUrl) return;
+
+    let s = state.get(img);
+    if (!s) {
+      s = { queue: buildCandidates(img, failedUrl) };
+      state.set(img, s);
+      if (!s.queue.length) return;
+      // Ab jetzt nur noch src verwenden, damit der Browser nicht erneut
+      // eine fehlende Variante aus srcset/<source> wählt
+      const picture = img.closest("picture");
+      if (picture) picture.querySelectorAll("source").forEach((x) => x.remove());
+      img.removeAttribute("srcset");
+    }
+    const next = s.queue.shift();
+    if (next) img.src = next;
+  }
+
+  window.addEventListener(
+    "error",
+    (e) => {
+      if (e.target instanceof HTMLImageElement) handleError(e.target);
+    },
+    true,
+  );
+
+  // Bilder, die schon vor dem Laden dieses Skripts fehlgeschlagen sind
+  document.querySelectorAll("img").forEach((img) => {
+    if (img.complete && img.naturalWidth === 0 && (img.currentSrc || img.src)) {
+      handleError(img);
+    }
+  });
+})();
+
 const btnMobileNav = document.querySelector(".btn-mobile-nav");
 const header = document.querySelector(".site-header");
 
